@@ -119,3 +119,21 @@ Outcome/exit: Setting changes affect play immediately while preserving the board
 Exactly one phase code review/testing/report task, dependent on all delivery milestones being completed and closed. Verify cross-milestone interactions, applicable regressions, exits and TODO disposition; update HANDOFF in the owning completion commit.
 
 Phase exit: All six settings and stable preview work during ordinary/penetrator play with correct timing and focus behavior, no persistence, and preserved gameplay. Two cohesive delivery milestones avoid splitting each small control into a separate phase. Feature version v0.6.0. Publish the completed boundary, integrate explicitly into main, verify merged state and publish before any authorized successor or release.
+
+## Phase 7 — Persistent configuration
+
+Depends on verified, integrated and published Phase 6, with required issue/milestone closures. Contract baseline: SPEC SHA-256 `94ccb2ea93492dd2c584512a715c887d53b2676ae78e6dd3204d57ae841d4524`, C13 plus C12 behavior and C1–C11 regression.
+
+### Milestone 7.1 — Independent settings restoration
+
+Outcome/exit: Each setting restores from its own valid URL/cookie/default source before the first game frame. Begins after the predecessor phase gate. Conclude with code review, applicable tests, blocker repair and a committed milestone report. Demonstrate the resulting capability and retain usability/risk evidence for any human continue/amend/simplify/stop decision.
+
+### Milestone 7.2 — Durable player changes and failure tolerance
+
+Outcome/exit: Player changes update only their cookie/query key and remain playable when either persistence side effect fails. Depends on milestone 7.1 completion and closure. Conclude with code review, applicable tests, blocker repair and a committed milestone report. Demonstrate the resulting capability and retain usability/risk evidence for any human continue/amend/simplify/stop decision.
+
+### Milestone 7.3 — Phase review
+
+Exactly one phase code review/testing/report task, dependent on all delivery milestones being completed and closed. Verify cross-milestone interactions, applicable regressions, exits and TODO disposition; update HANDOFF in the owning completion commit.
+
+Phase exit: Independent precedence, explicit default synchronization, cookie retention, canonical URL updates and failure tolerance are demonstrated in both browsers; all prior gameplay remains playable. Phase review includes the final implementation/TODO aggregation. Feature version v0.7.0. Publish the completed boundary, integrate explicitly into main, verify merged state and publish before any authorized successor or release.
