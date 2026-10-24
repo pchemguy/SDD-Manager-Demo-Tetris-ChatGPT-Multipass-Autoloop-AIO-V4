@@ -24,3 +24,7 @@ Tests mirror responsibilities, not every file. Shared fixtures have no productio
 ## Piece assistance ownership
 
 `src/game/geometry.ts` owns kick candidate order and the landing query, with focused geometry fixtures; `source.ts` owns bag state. `session.ts` owns Hold and lock timing, tested by `tests/unit/session.test.ts`. `src/ui/renderer.ts` draws the ghost; `status.ts` draws Hold; `input.ts` supplies C/Space actions. `tests/browser/` covers Hold/input, landing equality and visible ghost output. These extend existing cohesive owners rather than duplicate projections in the view.
+
+## Conditional ghost drawing
+
+`src/ui/ghost.ts` owns the pure visibility predicate; `tests/unit/ghost.test.ts` owns midline/straddle fixtures. Renderer consumes the existing landing query and predicate; `tests/browser/` verifies visible/hidden raster output and unchanged hard-drop landing. No extra model or persistence owner is required.
