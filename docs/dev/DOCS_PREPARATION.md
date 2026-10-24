@@ -4,7 +4,7 @@
 
 - Mode: autodoc/autoloop, explicitly requested on 2026-10-24 for six predefined cumulative scopes.
 - Delivery mode: strict multipass. No permission to change earlier phases/tasks has been supplied. Preserve their identities, scope, milestone membership, order, dependencies and exits; add subsequent ranges for subsequent scope.
-- Current pass: 2; DOCS-004 accepted; next DOCS-005.
+- Current pass: 2; DOCS-005 accepted; next DOCS-006.
 - Approval basis: first PROJECT explicitly approved by the user (“Approve”) on 2026-10-24. Later PROJECT approvals are waived, as announced in chat; subsequent document checkpoints and scope resets are preapproved by the selected mode after first approval. Newly discovered material choices are delegated under autoloop, with visible rationale. Initial cross-scope proposals were accepted in that same approval.
 - Tracking: enabled for preparation and implementation by existing root AGENTS.md. Milestone 1 (`sdd-docs-main`) and issues 1–9 match bundled definitions and associations, verified before repository writes. No implementation objects activated.
 - Publication: every owned commit is pushed and read back before progression. Reporting: Standard after Explicit bootstrap.
@@ -82,6 +82,8 @@ Material unresolved decisions: none; first PROJECT approval accepted the brief a
 
 | Pass 2, DOCS-004 | `DECOMPOSITION.md` SHA-256 `741b52e96c4d874ba171771dc174e0fe3f68345cc2da355828f0f4cb8dc9b3c2`; scoped autodoc/autoloop preapproval following first PROJECT approval. Current architecture/component responsibilities, required interfaces, verification seams and failure ownership reviewed; no duplicated rule owners. Publication and issue #4 closure must be read back before progression. |
 
+| Pass 2, DOCS-005 | `SPEC.md` SHA-256 `347dd3035fb3ed5dab05177f74ac3389fe05bec2f38e68dfce6183d1983880a8`; scoped autodoc/autoloop preapproval following first PROJECT approval. Current SPEC/design QC Ready; adjacent review report retains exact input identities, coverage, earlier observations and recheck. Use the explicit ordered clockwise kick offsets in C3; 7-bag and Hold form Phase 2, landing/lock assistance Phase 3. Phase 2 retains failed-down timing until the bounded Phase 3 timing change. These are delegated delivery/contract details, not changes to Phase 1. Publication and issue #5 closure must be read back before progression. |
+
 ## Initialization and current reset
 
 - Original root-file presence: all four existed: AI_DISCLOSURE.md, SDD-MANAGER.md, AGENTS.md, SKILL_DISCOVERY_PROTOCOL.md. Copied root files: none.
@@ -92,4 +94,4 @@ Material unresolved decisions: none; first PROJECT approval accepted the brief a
 
 ## Pending transitions
 
-Publish/read back this DOCS-004 checkpoint, then close/read back issue #4. All prior checkpoint effects have been verified. Continue only after the required hosted effect is verified.
+Publish/read back this DOCS-005 checkpoint, then close/read back issue #5. All prior checkpoint effects have been verified. Continue only after the required hosted effect is verified.
