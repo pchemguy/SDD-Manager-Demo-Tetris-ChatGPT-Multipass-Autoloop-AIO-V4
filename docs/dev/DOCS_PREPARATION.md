@@ -4,7 +4,7 @@
 
 - Mode: autodoc/autoloop, explicitly requested on 2026-10-24 for six predefined cumulative scopes.
 - Delivery mode: strict multipass. No permission to change earlier phases/tasks has been supplied. Preserve their identities, scope, milestone membership, order, dependencies and exits; add subsequent ranges for subsequent scope.
-- Current pass: 6; DOCS-002 accepted; next DOCS-003.
+- Current pass: 6; DOCS-003 accepted; next DOCS-004.
 - Approval basis: first PROJECT explicitly approved by the user (“Approve”) on 2026-10-24. Later PROJECT approvals are waived, as announced in chat; subsequent document checkpoints and scope resets are preapproved by the selected mode after first approval. Newly discovered material choices are delegated under autoloop, with visible rationale. Initial cross-scope proposals were accepted in that same approval.
 - Tracking: enabled for preparation and implementation by existing root AGENTS.md. Milestone 1 (`sdd-docs-main`) and issues 1–9 match bundled definitions and associations, verified before repository writes. No implementation objects activated.
 - Publication: every owned commit is pushed and read back before progression. Reporting: Standard after Explicit bootstrap.
@@ -158,6 +158,8 @@ Material unresolved decisions: none; first PROJECT approval accepted the brief a
 
 - Pass 6, DOCS-002: `PROJECT.md` SHA-256 `60b3cdb190f97e48451d4d401f4aae170de815f425f06a9aec07c59fa45f6119`; scoped autodoc/autoloop preapproval following first PROJECT approval. Current cumulative brief reviewed; inherited human-approved decisions retained. Use exact finite tokens and application-scoped cookies; invalid or duplicate URL values fall through per key. Resolve once before the first frame. Cookie/History failures are independent best-effort effects with nonblocking feedback; only settings persist. Earlier Phase 6 remains the session-only increment, and Phase 7 adds persistence without rewriting its tasks/exits. Publication and issue #2 closure must be read back before progression.
 
+- Pass 6, DOCS-003: `ARCHITECTURE.md` SHA-256 `9f3719756878e527de4e7cf36b1f5a9bb42a015e2f0830c282a1db80aedd0ec7`; scoped autodoc/autoloop preapproval following first PROJECT approval. Current PROJECT conformance, single state ownership, dependency direction and new interactions reviewed. Unchanged acceptable structure reused without artificial changes. Publication and issue #3 closure must be read back before progression.
+
 ## Initialization and current reset
 
 - Original root-file presence: all four existed: AI_DISCLOSURE.md, SDD-MANAGER.md, AGENTS.md, SKILL_DISCOVERY_PROTOCOL.md. Copied root files: none.
@@ -168,4 +170,4 @@ Material unresolved decisions: none; first PROJECT approval accepted the brief a
 
 ## Pending transitions
 
-Publish/read back this DOCS-002 checkpoint, then close/read back issue #2. All prior checkpoint effects have been verified. Continue only after the required hosted effect is verified.
+Publish/read back this DOCS-003 checkpoint, then close/read back issue #3. All prior checkpoint effects have been verified. Continue only after the required hosted effect is verified.

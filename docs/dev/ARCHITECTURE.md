@@ -46,4 +46,8 @@ Geometry owns both ordinary and penetrator placement/projection under an explici
 
 ## Live settings and preview
 
-A typed settings record in session state is the single runtime source of truth. The browser settings adapter validates control values and emits setting-change commands; the reducer applies behavior/timing transitions atomically, and presentation reads the resulting selected values. No storage adapter is present. Source exposes a stable next-shape peek without consuming a draw; preview rendering cannot influence the sequence. Configuration is a small fixed record, not a generic rules engine.
+A typed settings record in session state is the single runtime source of truth. The browser settings adapter validates control values and emits setting-change commands; the reducer applies behavior/timing transitions atomically, and presentation reads the resulting selected values. A browser persistence adapter resolves validated settings before session creation and attempts independent cookie/URL updates after a user change. The pure model has no storage dependency. Source exposes a stable next-shape peek without consuming a draw; preview rendering cannot influence the sequence. Configuration is a small fixed record, not a generic rules engine.
+
+## Persistence boundary
+
+The browser adapter reads URL/cookie strings and calls the shared finite-domain validator; a pure per-setting resolver returns effective values and valid explicit URL values requiring cookie synchronization. Startup creates the model only after resolution, preventing a frame with conflicting defaults. Runtime changes commit model state before independent persistence attempts. Cookies and History are best-effort side effects with separate outcomes; neither may roll back a valid user choice or block play. Persist only the six settings, never board, score, bonus inventory or source state.
