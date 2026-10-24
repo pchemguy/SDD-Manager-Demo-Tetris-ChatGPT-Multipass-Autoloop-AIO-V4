@@ -32,3 +32,7 @@ Tests mirror responsibilities, not every file. Shared fixtures have no productio
 ## Penetrator geometry and bonuses
 
 Extend `src/game/types.ts` with active mode, bonus count and locked display color; `geometry.ts` owns mode-aware landing/transforms and `session.ts` owns activation/award/Hold gating. `board.ts` keeps strict merge validation. Unit fixtures cover shelf/cavity geometry and lifecycle. Renderer/status own white drawing and bonus symbols; `tests/browser/` verifies traversal, visible projection and spend/award updates. No second board or destructive traversal module is introduced.
+
+## Live configuration ownership
+
+`src/game/settings.ts` owns types, value validation and defaults; `session.ts` owns settings transitions and policy effects. `src/ui/settings.ts` owns labeled controls, while status renders source preview and selected state. `tests/unit/settings.test.ts` and session/source fixtures cover value domains and timer/sequence behavior; browser tests cover actual controls, focus, immediate drawing, restart retention and reload reset. No cookie/URL storage module belongs to this delivery boundary.
