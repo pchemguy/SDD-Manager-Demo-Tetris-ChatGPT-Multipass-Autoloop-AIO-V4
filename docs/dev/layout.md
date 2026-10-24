@@ -28,3 +28,7 @@ Tests mirror responsibilities, not every file. Shared fixtures have no productio
 ## Conditional ghost drawing
 
 `src/ui/ghost.ts` owns the pure visibility predicate; `tests/unit/ghost.test.ts` owns midline/straddle fixtures. Renderer consumes the existing landing query and predicate; `tests/browser/` verifies visible/hidden raster output and unchanged hard-drop landing. No extra model or persistence owner is required.
+
+## Penetrator geometry and bonuses
+
+Extend `src/game/types.ts` with active mode, bonus count and locked display color; `geometry.ts` owns mode-aware landing/transforms and `session.ts` owns activation/award/Hold gating. `board.ts` keeps strict merge validation. Unit fixtures cover shelf/cavity geometry and lifecycle. Renderer/status own white drawing and bonus symbols; `tests/browser/` verifies traversal, visible projection and spend/award updates. No second board or destructive traversal module is introduced.

@@ -4,7 +4,7 @@
 
 - Mode: autodoc/autoloop, explicitly requested on 2026-10-24 for six predefined cumulative scopes.
 - Delivery mode: strict multipass. No permission to change earlier phases/tasks has been supplied. Preserve their identities, scope, milestone membership, order, dependencies and exits; add subsequent ranges for subsequent scope.
-- Current pass: 4; DOCS-006 accepted; next DOCS-007.
+- Current pass: 4; DOCS-007 accepted; next DOCS-008.
 - Approval basis: first PROJECT explicitly approved by the user (“Approve”) on 2026-10-24. Later PROJECT approvals are waived, as announced in chat; subsequent document checkpoints and scope resets are preapproved by the selected mode after first approval. Newly discovered material choices are delegated under autoloop, with visible rationale. Initial cross-scope proposals were accepted in that same approval.
 - Tracking: enabled for preparation and implementation by existing root AGENTS.md. Milestone 1 (`sdd-docs-main`) and issues 1–9 match bundled definitions and associations, verified before repository writes. No implementation objects activated.
 - Publication: every owned commit is pushed and read back before progression. Reporting: Standard after Explicit bootstrap.
@@ -126,6 +126,8 @@ Material unresolved decisions: none; first PROJECT approval accepted the brief a
 
 - Pass 4, DOCS-006: `PLAN.md` SHA-256 `2bd3073e085215628a341fdce72d036ee805b84a9211e0d4c5cb0ed4c559e7c3`; scoped autodoc/autoloop preapproval following first PROJECT approval. PLAN/SPEC strategy QC: Phase 5: 3 delivery milestone(s), plus one excluded single-task phase review. Each new phase has a bounded integrated player outcome. Groups with one or two delivery milestones are retained because the scoped capability and its checks are cohesive; splitting would add handoff overhead without an independently useful product. Earlier ranges are byte-identical, not cumulatively regenerated. Contract coverage: Phase 5 → C10–C11 plus C7–C9 interaction regression. No current-scope contract is omitted. Strategy Ready; TASKS remains blocked until combined layout recheck. Publication and issue #6 closure must be read back before progression.
 
+- Pass 4, DOCS-007: `layout.md` SHA-256 `5eae99bb0bb7d372d93d3011f2a588b2abceaf2c7b0e2a6ddaa8c6cbe656c693`; scoped autodoc/autoloop preapproval following first PROJECT approval. Combined PLAN/layout QC Ready; exact source identities and preserved earlier delivery ranges in PLAN-REVIEW-REPORT.md. Unchanged valid placement reused where appropriate. Publication and issue #7 closure must be read back before progression.
+
 ## Initialization and current reset
 
 - Original root-file presence: all four existed: AI_DISCLOSURE.md, SDD-MANAGER.md, AGENTS.md, SKILL_DISCOVERY_PROTOCOL.md. Copied root files: none.
@@ -136,4 +138,4 @@ Material unresolved decisions: none; first PROJECT approval accepted the brief a
 
 ## Pending transitions
 
-Publish/read back this DOCS-006 checkpoint, then close/read back issue #6. All prior checkpoint effects have been verified. Continue only after the required hosted effect is verified.
+Publish/read back this DOCS-007 checkpoint, then close/read back issue #7. All prior checkpoint effects have been verified. Continue only after the required hosted effect is verified.
