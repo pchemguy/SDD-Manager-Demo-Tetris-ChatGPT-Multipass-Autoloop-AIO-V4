@@ -101,3 +101,21 @@ Outcome/exit: The built game demonstrates safe traversal, matching projection an
 Exactly one phase code review/testing/report task, dependent on all delivery milestones being completed and closed. Verify cross-milestone interactions, applicable regressions, exits and TODO disposition; update HANDOFF in the owning completion commit.
 
 Phase exit: Penetrator traversal never destroys occupied cells or commits overlap; solver equality, active Hold restriction, bonus cap/spending and white rendering are verified with full gameplay regressions. Feature version v0.5.0. Publish the completed boundary, integrate explicitly into main, verify merged state and publish before any authorized successor or release.
+
+## Phase 6 — Session configuration
+
+Depends on verified, integrated and published Phase 5, with required issue/milestone closures. Contract baseline: SPEC SHA-256 `c3ad6a470df4d3a8e2262c8c10dc32f98b1a103d20f053a993e0b64de0ff4a5b`, C12 and C7–C11 settings interactions.
+
+### Milestone 6.1 — Settings controls and stable preview
+
+Outcome/exit: Six labeled controls and one next-shape preview expose finite defaults without persistence. Begins after the predecessor phase gate. Conclude with code review, applicable tests, blocker repair and a committed milestone report. Demonstrate the resulting capability and retain usability/risk evidence for any human continue/amend/simplify/stop decision.
+
+### Milestone 6.2 — Live behavior and timing
+
+Outcome/exit: Setting changes affect play immediately while preserving the board and lifecycle invariants. Depends on milestone 6.1 completion and closure. Conclude with code review, applicable tests, blocker repair and a committed milestone report. Demonstrate the resulting capability and retain usability/risk evidence for any human continue/amend/simplify/stop decision.
+
+### Milestone 6.3 — Phase review
+
+Exactly one phase code review/testing/report task, dependent on all delivery milestones being completed and closed. Verify cross-milestone interactions, applicable regressions, exits and TODO disposition; update HANDOFF in the owning completion commit.
+
+Phase exit: All six settings and stable preview work during ordinary/penetrator play with correct timing and focus behavior, no persistence, and preserved gameplay. Two cohesive delivery milestones avoid splitting each small control into a separate phase. Feature version v0.6.0. Publish the completed boundary, integrate explicitly into main, verify merged state and publish before any authorized successor or release.

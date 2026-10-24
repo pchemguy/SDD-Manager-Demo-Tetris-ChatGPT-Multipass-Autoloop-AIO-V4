@@ -4,7 +4,7 @@
 
 - Mode: autodoc/autoloop, explicitly requested on 2026-10-24 for six predefined cumulative scopes.
 - Delivery mode: strict multipass. No permission to change earlier phases/tasks has been supplied. Preserve their identities, scope, milestone membership, order, dependencies and exits; add subsequent ranges for subsequent scope.
-- Current pass: 5; DOCS-005 accepted; next DOCS-006.
+- Current pass: 5; DOCS-006 accepted; next DOCS-007.
 - Approval basis: first PROJECT explicitly approved by the user (“Approve”) on 2026-10-24. Later PROJECT approvals are waived, as announced in chat; subsequent document checkpoints and scope resets are preapproved by the selected mode after first approval. Newly discovered material choices are delegated under autoloop, with visible rationale. Initial cross-scope proposals were accepted in that same approval.
 - Tracking: enabled for preparation and implementation by existing root AGENTS.md. Milestone 1 (`sdd-docs-main`) and issues 1–9 match bundled definitions and associations, verified before repository writes. No implementation objects activated.
 - Publication: every owned commit is pushed and read back before progression. Reporting: Standard after Explicit bootstrap.
@@ -144,6 +144,8 @@ Material unresolved decisions: none; first PROJECT approval accepted the brief a
 
 - Pass 5, DOCS-005: `SPEC.md` SHA-256 `c3ad6a470df4d3a8e2262c8c10dc32f98b1a103d20f053a993e0b64de0ff4a5b`; scoped autodoc/autoloop preapproval following first PROJECT approval. Current SPEC/design QC Ready; adjacent review report retains exact input identities, coverage, earlier observations and recheck. A hard drop under follow + failed-down performs the failed continuation at its landing and locks there; immediate always locks on an enabled drop. Same-value changes never restart timing. Stable preview does not consume a shape. Clarify C5’s ordinary-color rule and activation grounding under C10 without changing the accepted penetrator behavior. Publication and issue #5 closure must be read back before progression.
 
+- Pass 5, DOCS-006: `PLAN.md` SHA-256 `243f6884252ac90859ca39f550c8780f6a653aff60d6ad211b5758173bf34f92`; scoped autodoc/autoloop preapproval following first PROJECT approval. PLAN/SPEC strategy QC: Phase 6: 2 delivery milestone(s), plus one excluded single-task phase review. Each new phase has a bounded integrated player outcome. Groups with one or two delivery milestones are retained because the scoped capability and its checks are cohesive; splitting would add handoff overhead without an independently useful product. Earlier ranges are byte-identical, not cumulatively regenerated. Contract coverage: Phase 6 → C12 and C7–C11 settings interactions. No current-scope contract is omitted. Strategy Ready; TASKS remains blocked until combined layout recheck. Publication and issue #6 closure must be read back before progression.
+
 ## Initialization and current reset
 
 - Original root-file presence: all four existed: AI_DISCLOSURE.md, SDD-MANAGER.md, AGENTS.md, SKILL_DISCOVERY_PROTOCOL.md. Copied root files: none.
@@ -154,4 +156,4 @@ Material unresolved decisions: none; first PROJECT approval accepted the brief a
 
 ## Pending transitions
 
-Publish/read back this DOCS-005 checkpoint, then close/read back issue #5. All prior checkpoint effects have been verified. Continue only after the required hosted effect is verified.
+Publish/read back this DOCS-006 checkpoint, then close/read back issue #6. All prior checkpoint effects have been verified. Continue only after the required hosted effect is verified.
