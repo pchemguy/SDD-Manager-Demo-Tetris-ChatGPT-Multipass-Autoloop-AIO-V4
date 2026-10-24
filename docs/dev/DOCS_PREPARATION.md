@@ -4,7 +4,7 @@
 
 - Mode: autodoc/autoloop, explicitly requested on 2026-10-24 for six predefined cumulative scopes.
 - Delivery mode: strict multipass. No permission to change earlier phases/tasks has been supplied. Preserve their identities, scope, milestone membership, order, dependencies and exits; add subsequent ranges for subsequent scope.
-- Current pass: 1; DOCS-007 accepted; next DOCS-008.
+- Current pass: 1; DOCS-008 accepted; next authorized next predefined reset.
 - Approval basis: first PROJECT explicitly approved by the user (“Approve”) on 2026-10-24. Later PROJECT approvals are waived, as announced in chat; subsequent document checkpoints and scope resets are preapproved by the selected mode after first approval. Newly discovered material choices are delegated under autoloop, with visible rationale. Initial cross-scope proposals were accepted in that same approval.
 - Tracking: enabled for preparation and implementation by existing root AGENTS.md. Milestone 1 (`sdd-docs-main`) and issues 1–9 match bundled definitions and associations, verified before repository writes. No implementation objects activated.
 - Publication: every owned commit is pushed and read back before progression. Reporting: Standard after Explicit bootstrap.
@@ -68,6 +68,8 @@ Material unresolved decisions: none; first PROJECT approval accepted the brief a
 
 | Pass 1, DOCS-007 | `layout.md` SHA-256 `adbcc9417842239f2636759b46b318c89c55693ae1f8f9b06da31b47679113d3`; scoped autodoc/autoloop preapproval following first PROJECT approval. Combined PLAN/layout QC Ready; see PLAN-REVIEW-REPORT.md Revision 1. Source/test/docs/build ownership and generated exclusions checked. Publication and issue #7 closure must be read back before progression. |
 
+| Pass 1, DOCS-008 | `TASKS.md` SHA-256 `9df8c56613358ed4d2b453c8fc72c3daa0dc5d54360373a11f6f7e28e06e4f19`; scoped autodoc/autoloop preapproval following first PROJECT approval. TASKS/PLAN QC Ready; T-001–T-013, three delivery tasks per milestone plus mandatory reviews; see TASKS-REVIEW-REPORT.md. Authorized next boundary is Pass 2 reset, not package QC. Publication and issue #8 closure must be read back before progression. |
+
 ## Initialization and current reset
 
 - Original root-file presence: all four existed: AI_DISCLOSURE.md, SDD-MANAGER.md, AGENTS.md, SKILL_DISCOVERY_PROTOCOL.md. Copied root files: none.
@@ -78,4 +80,4 @@ Material unresolved decisions: none; first PROJECT approval accepted the brief a
 
 ## Pending transitions
 
-Publish/read back this DOCS-007 checkpoint, then close/read back issue #7. All prior checkpoint effects have been verified. Continue only after the required hosted effect is verified.
+Publish/read back this DOCS-008 checkpoint, then close/read back issue #8. All prior checkpoint effects have been verified. Continue only after the required hosted effect is verified.

@@ -1,31 +1,19 @@
 # Project handoff
 
-Checkpoint: main-document preparation initialization, Pass 1.
-
-Outcome: all four root guidance files preserved; manual provenance scaffold integrated and published. Initial project documents and implementation do not exist yet.
+Checkpoint: Pass 1 DOCS-008, accepted document set through TASKS.
 
 ## Workflow and sources
 
-- Workflow/stage/owner: main development, documentation preparation, sdd-manage; PROJECT owner sdd-design.
-- Governing records: [DOCS_TASKS](DOCS_TASKS.md), [DOCS_PREPARATION](DOCS_PREPARATION.md), [root guidance](../../AGENTS.md), [browser policy](../../BROWSER_DEV_POLICY.md).
-- Package: repository `.agents/plugins/sdd-manager`, version 0.15.2. Linux execution host; Git 2.51.1, Node 24.19.0, Python 3.12.14 observed. No browser setup needed during documentation.
+Main development documentation preparation; sdd-manage coordinates. [DOCS_PREPARATION](DOCS_PREPARATION.md) owns scope, decisions, hashes and approval evidence; [DOCS_TASKS](DOCS_TASKS.md) owns checkoffs. Product roots: PROJECT, ARCHITECTURE, DECOMPOSITION, SPEC, PLAN, layout and TASKS in this directory. Adjacent SPEC/PLAN/TASKS reports own per-document QC. Running package: repository SDD Manager 0.15.2.
 
 ## Scope and human decisions
 
-- Objective: six cumulative predefined scopes in strict autodoc/autoloop, as retained in DOCS_PREPARATION.
-- Next human checkpoint: first PROJECT approval. Later PROJECT approvals waived; later document checkpoints and resets preapproved after that first approval.
-- Exact final stop: final Pass 6 DOCS-008 completion before DOCS-009/package QC, documentation integration and implementation.
-- Tracking: enabled by root AGENTS; milestone 1 and issues 1–9 projection verified. Push/read back every commit. Reporting Standard.
+Six predefined cumulative scopes; strict multipass. First PROJECT approved by the user on 2026-10-24. Later checkpoints and scope resets preapproved under autodoc/autoloop. Reporting Standard. No implementation range authorized. Final stop is Pass 6 DOCS-008, before DOCS-009/package QC, merge or implementation. Tracking enabled by root AGENTS; publish every commit and verify hosted effects.
 
 ## Branches and return
 
-- Working branch: design-docs/main.
-- Creation parent / eventual integration target: main.
-- Branch-off commit: `38b5c4bf8d5c945a4eaf8dffb0a03610b8ace7f7`.
-- Reserved provenance branch design-docs/ai-logs is integrated and retained; no suspended parent workflow.
+Working branch design-docs/main; creation parent and eventual integration target main; branch-off commit `38b5c4bf8d5c945a4eaf8dffb0a03610b8ace7f7`. Provenance branch design-docs/ai-logs is integrated and retained. No suspended parent.
 
 ## Pending work and next action
 
-- Publish initialization and verify DOCS-001 closure; then prepare/publish PROJECT proposal and retain DOCS-002 unchecked until acceptance.
-- Recover later progress from DOCS_PREPARATION and Git; this snapshot does not prove its own later publication or issue closure.
-- Releases are required after subsequently authorized, verified and integrated implementation phases. No product release or implementation is authorized at this checkpoint.
+Publish/read back this TASKS completion and close/read back issue #8. Then perform the authorized reset to Pass 2, reopen the same issues #2–9 and verify before authoring. Reconstruct later effects from DOCS_PREPARATION, Git and provider state; this snapshot cannot establish its own later publication.
