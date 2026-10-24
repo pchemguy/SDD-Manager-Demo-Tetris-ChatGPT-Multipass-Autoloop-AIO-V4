@@ -20,3 +20,7 @@ This maps the intended [component model](DECOMPOSITION.md) to source ownership. 
 Ignore `node_modules/`, `dist/`, dedicated browser binaries/profiles, test results and screenshots; retain reproducible evidence summaries in owning task/review reports. Keep credentials excluded by root `*.tkn`. Do not modify bundled plugin files as part of game development. Manual conversations belong under docs/ai-logs only when explicitly recorded; exclude them from ordinary source/QC inputs.
 
 Tests mirror responsibilities, not every file. Shared fixtures have no production consumers. No test-only state controls appear in the public player UI. Root [AGENTS](../../AGENTS.md) and browser policy remain controlling; commands become documentation only after validated setup.
+
+## Piece assistance ownership
+
+`src/game/geometry.ts` owns kick candidate order and the landing query, with focused geometry fixtures; `source.ts` owns bag state. `session.ts` owns Hold and lock timing, tested by `tests/unit/session.test.ts`. `src/ui/renderer.ts` draws the ghost; `status.ts` draws Hold; `input.ts` supplies C/Space actions. `tests/browser/` covers Hold/input, landing equality and visible ghost output. These extend existing cohesive owners rather than duplicate projections in the view.
