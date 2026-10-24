@@ -65,3 +65,17 @@ Outcome/exit: A grounded active piece locks after one full simulation gravity in
 Exactly one phase code review/testing/report task, dependent on all delivery milestones being completed and closed. Verify cross-milestone interactions, applicable regressions, exits and TODO disposition; update HANDOFF in the owning completion commit.
 
 Phase exit: Ghost and hard drop share an exact ordinary projection, and all relevant actions obey full-interval locking. Both-browser rendering/interaction evidence and source/Hold/classic regressions pass. Feature version v0.3.0. Publish the completed boundary, integrate explicitly into main, verify merged state and publish before any authorized successor or release.
+
+## Phase 4 — Conditional ghost display
+
+Depends on verified, integrated and published Phase 3, with required issue/milestone closures. Contract baseline: SPEC SHA-256 `5ce6a6128863ba069de2ec09465164645f646b40dd81efd9d5f24c4a9dbe2394`, C9 and C8 projection regression.
+
+### Milestone 4.1 — Midline visibility
+
+Outcome/exit: Upper-only projections hide while lower/straddling landings show; hiding never changes hard-drop placement. Begins after the predecessor phase gate. Conclude with code review, applicable tests, blocker repair and a committed milestone report. Demonstrate the resulting capability and retain usability/risk evidence for any human continue/amend/simplify/stop decision.
+
+### Milestone 4.2 — Phase review
+
+Exactly one phase code review/testing/report task, dependent on all delivery milestones being completed and closed. Verify cross-milestone interactions, applicable regressions, exits and TODO disposition; update HANDOFF in the owning completion commit.
+
+Phase exit: Dynamic visibility obeys the occupied-cell midline predicate while all landing/locking/controls remain usable. One narrow delivery milestone is intentional: separate phases for a predicate and its integration would fragment this small behavior. Feature version v0.4.0. Publish the completed boundary, integrate explicitly into main, verify merged state and publish before any authorized successor or release.
