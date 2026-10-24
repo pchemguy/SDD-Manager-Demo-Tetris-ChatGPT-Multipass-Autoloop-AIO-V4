@@ -37,3 +37,7 @@ Geometry provides the deepest legal landing for a shape/column/orientation and v
 ## Configuration and next preview
 
 Settings validation owns the six finite value domains and defaults; the session owns selected values and their effect on active timing. The UI settings view owns labeled controls and semantic change events, including correct focus isolation. Input checks hard-drop/Hold enablement at command handling; active penetrator Hold suppression remains a stronger lifecycle rule. Source owns the cached next-shape peek, and status renders it without a draw. Unit checks isolate validation and timing transitions; browser checks exercise real control changes without resetting the board or stealing control focus.
+
+## Settings persistence components
+
+The shared validator owns tokens/defaults. A pure resolver owns per-key URL→cookie→default selection and duplicate/invalid handling; it consumes parsed inputs and returns values plus explicit-valid synchronization intents. The browser persistence adapter owns cookie parsing/encoding, scoped writes/readback and History replacement. The controller supplies resolved startup values and triggers writes after user changes. Views receive selected values and an optional concise persistence-availability status; they never read cookies. Test parsing and mixed-source resolution without a browser, then test real reload/URL/cookie behavior through the actual app.
