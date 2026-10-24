@@ -1,6 +1,6 @@
 # Project handoff
 
-Checkpoint: authorized reset to Pass 5 — Session-only configuration.
+Checkpoint: Pass 5 DOCS-008, accepted document set through TASKS.
 
 ## Workflow and sources
 
@@ -16,4 +16,4 @@ Working branch design-docs/main; creation parent and eventual integration target
 
 ## Pending work and next action
 
-Publish/read back this reset, then reopen/read back the same issues #2–9. Retain issue #1 closed and milestone 1 open. Resume PROJECT only after all effects are verified. Prior accepted range checkpoint: `d67ba4d2d75f803c40af89ca9455543a9fa4215c`. Strict preservation and original final stop remain controlling.
+Publish/read back this TASKS completion and close/read back issue #8. Then perform the authorized reset to Pass 6, reopen the same issues #2–9 and verify before authoring. Reconstruct later effects from DOCS_PREPARATION, Git and provider state; this snapshot cannot establish its own later publication.

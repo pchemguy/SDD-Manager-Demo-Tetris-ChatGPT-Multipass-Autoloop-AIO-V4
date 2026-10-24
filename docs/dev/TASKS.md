@@ -165,3 +165,34 @@ All work is planned and unchecked. [PLAN](PLAN.md) owns phase/milestone boundari
     - [ ] Milestone 5.4 — Phase review
         - [ ] T-048 — Review, test and report phase 5
             Depends on: milestone 5.1 completed/closed, milestone 5.2 completed/closed, milestone 5.3 completed/closed. Review cross-milestone code, run phase exits/regressions, repair blockers, aggregate TODOs and update HANDOFF. Report: docs/dev/reports/phases/5/PHASE-REPORT.md. Publish before review issue/milestone closure; integrate only the complete verified phase. Release/version preparation follows the authorized release gate.
+
+## Phase 6 — Session configuration
+
+- [ ] Phase 6 — Session configuration
+    - [ ] Milestone 6.1 — Settings controls and stable preview
+        - [ ] T-049 — Define typed settings and validated defaults
+            Scope: src/game/settings.ts, types and unit tests. Depends on: Phase 5 completion, closure and published integration.
+            Contract: SPEC C12 and C7–C11 settings interactions under this phase’s recorded baseline; PLAN Phase 6 and layout ownership. Evidence: Cover all six value domains, defaults, invalid/same-value rejection and session-owned values.
+        - [ ] T-050 — Expose stable next-piece peek
+            Scope: source/session/status and sequence fixtures. Depends on: T-049.
+            Contract: SPEC C12 and C7–C11 settings interactions under this phase’s recorded baseline; PLAN Phase 6 and layout ownership. Evidence: Preview one upcoming shape without consuming draws; cover bag boundaries, Hold draws/swaps and repeated visibility toggles.
+        - [ ] T-051 — Build the side-panel settings controls
+            Scope: src/ui/settings.ts, styles and browser checks. Depends on: T-050.
+            Contract: SPEC C12 and C7–C11 settings interactions under this phase’s recorded baseline; PLAN Phase 6 and layout ownership. Evidence: Label each control, reflect session values, fit desktop layout and preserve keyboard focus ownership; no storage/query writes.
+        - [ ] T-052 — Review, test and report milestone 6.1
+            Depends on: T-049, T-050, T-051. Review code and tests separately, exercise milestone exits/regressions, repair blockers and document TODO disposition. Report: docs/dev/reports/phases/6/6.1.md. Refresh HANDOFF; commit/push/read back before issue then milestone closure.
+    - [ ] Milestone 6.2 — Live behavior and timing
+        - [ ] T-053 — Integrate enablement and ghost modes
+            Scope: input/session/ghost/status and unit/browser tests. Depends on: T-052.
+            Contract: SPEC C12 and C7–C11 settings interactions under this phase’s recorded baseline; PLAN Phase 6 and layout ownership. Evidence: Hard-drop/Hold toggles gate commands, stored Hold persists and penetrator Hold remains disabled; preview/ghost toggles do not change projection or source.
+        - [ ] T-054 — Implement selected lock policies and transitions
+            Scope: session/controller and exact-time fixtures. Depends on: T-053.
+            Contract: SPEC C12 and C7–C11 settings interactions under this phase’s recorded baseline; PLAN Phase 6 and layout ownership. Evidence: Cover general failed-down/interval × follow/immediate drop, actual versus same-value changes, grounded/airborne/penetrator state and no retroactive drop lock.
+        - [ ] T-055 — Validate session settings across complete games
+            Scope: browser suites, README and static build. Depends on: T-054.
+            Contract: SPEC C12 and C7–C11 settings interactions under this phase’s recorded baseline; PLAN Phase 6 and layout ownership. Evidence: Exercise all controls in both browsers, preserved board/score/bonuses, restart retention, reload defaults and untouched URL/cookies; repair regressions and document defaults.
+        - [ ] T-056 — Review, test and report milestone 6.2
+            Depends on: T-053, T-054, T-055. Review code and tests separately, exercise milestone exits/regressions, repair blockers and document TODO disposition. Report: docs/dev/reports/phases/6/6.2.md. Refresh HANDOFF; commit/push/read back before issue then milestone closure.
+    - [ ] Milestone 6.3 — Phase review
+        - [ ] T-057 — Review, test and report phase 6
+            Depends on: milestone 6.1 completed/closed, milestone 6.2 completed/closed. Review cross-milestone code, run phase exits/regressions, repair blockers, aggregate TODOs and update HANDOFF. Report: docs/dev/reports/phases/6/PHASE-REPORT.md. Publish before review issue/milestone closure; integrate only the complete verified phase. Release/version preparation follows the authorized release gate.
