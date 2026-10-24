@@ -2,9 +2,9 @@
 
 ## Current gate
 
-State: Ready for the reviewed spec boundary. Pass 2. `PROJECT.md` SHA-256 `350b6d8ddd0d98b41db504cd99401fd334261d40be412d9ed5ef30e7f45b8f9e`; `ARCHITECTURE.md` SHA-256 `4ef69dd2f9d355a89e2535690c24d3889d10c746810399f31841f40c508da7d4`; `DECOMPOSITION.md` SHA-256 `741b52e96c4d874ba171771dc174e0fe3f68345cc2da355828f0f4cb8dc9b3c2`; `SPEC.md` SHA-256 `347dd3035fb3ed5dab05177f74ac3389fe05bec2f38e68dfce6183d1983880a8`.
+State: Ready for the reviewed spec boundary. Pass 3. `PROJECT.md` SHA-256 `1ce5266517d6432f04353d807ad5642fa78d2c57be013352a28103b4b071abe3`; `ARCHITECTURE.md` SHA-256 `81fee8c3f146ac0dc0af9e51cdc2c490f8336613a6015479df36c27f047d6e24`; `DECOMPOSITION.md` SHA-256 `d764fc0e6064547b3d8847894c41321adbbf3706f449aa1d31b4e13dc8ec32f6`; `SPEC.md` SHA-256 `5ce6a6128863ba069de2ec09465164645f646b40dd81efd9d5f24c4a9dbe2394`.
 
-C7 maps bag generation to source and Hold state to session/status; C8 maps projection to geometry and timer ownership to session, with controller-supplied simulation time. C1–C6 were checked for current rotation/source/timing consistency. Covered bag boundaries, once-per-piece Hold, blocked replacement, ghost/drop equality, supported shifts, ungrounding, timer expiry and event serialization. No unresolved findings; controls, score and browser policy remain coherent.
+C9 maps to the presentation predicate and existing geometry projection. Reviewed exact row-9/10 and straddling semantics, transition refresh, no ghost after game over, pixel-independence and hidden hard-drop equality. C1–C8 ownership and behavior remain consistent; no new model state or unresolved findings.
 
 ## Initial review
 
@@ -19,5 +19,13 @@ Confirmed unresolved findings: none. This is per-document conformance review; no
 Pass 2 authoring/recheck. `PROJECT.md` SHA-256 `350b6d8ddd0d98b41db504cd99401fd334261d40be412d9ed5ef30e7f45b8f9e`; `ARCHITECTURE.md` SHA-256 `4ef69dd2f9d355a89e2535690c24d3889d10c746810399f31841f40c508da7d4`; `DECOMPOSITION.md` SHA-256 `741b52e96c4d874ba171771dc174e0fe3f68345cc2da355828f0f4cb8dc9b3c2`; `SPEC.md` SHA-256 `347dd3035fb3ed5dab05177f74ac3389fe05bec2f38e68dfce6183d1983880a8`.
 
 C7 maps bag generation to source and Hold state to session/status; C8 maps projection to geometry and timer ownership to session, with controller-supplied simulation time. C1–C6 were checked for current rotation/source/timing consistency. Covered bag boundaries, once-per-piece Hold, blocked replacement, ghost/drop equality, supported shifts, ungrounding, timer expiry and event serialization. No unresolved findings; controls, score and browser policy remain coherent.
+
+Confirmed unresolved findings: none. No runtime checks performed; document readiness only.
+
+## Revision 2
+
+Pass 3 authoring/recheck. `PROJECT.md` SHA-256 `1ce5266517d6432f04353d807ad5642fa78d2c57be013352a28103b4b071abe3`; `ARCHITECTURE.md` SHA-256 `81fee8c3f146ac0dc0af9e51cdc2c490f8336613a6015479df36c27f047d6e24`; `DECOMPOSITION.md` SHA-256 `d764fc0e6064547b3d8847894c41321adbbf3706f449aa1d31b4e13dc8ec32f6`; `SPEC.md` SHA-256 `5ce6a6128863ba069de2ec09465164645f646b40dd81efd9d5f24c4a9dbe2394`.
+
+C9 maps to the presentation predicate and existing geometry projection. Reviewed exact row-9/10 and straddling semantics, transition refresh, no ghost after game over, pixel-independence and hidden hard-drop equality. C1–C8 ownership and behavior remain consistent; no new model state or unresolved findings.
 
 Confirmed unresolved findings: none. No runtime checks performed; document readiness only.

@@ -4,7 +4,7 @@
 
 - Mode: autodoc/autoloop, explicitly requested on 2026-10-24 for six predefined cumulative scopes.
 - Delivery mode: strict multipass. No permission to change earlier phases/tasks has been supplied. Preserve their identities, scope, milestone membership, order, dependencies and exits; add subsequent ranges for subsequent scope.
-- Current pass: 3; DOCS-004 accepted; next DOCS-005.
+- Current pass: 3; DOCS-005 accepted; next DOCS-006.
 - Approval basis: first PROJECT explicitly approved by the user (“Approve”) on 2026-10-24. Later PROJECT approvals are waived, as announced in chat; subsequent document checkpoints and scope resets are preapproved by the selected mode after first approval. Newly discovered material choices are delegated under autoloop, with visible rationale. Initial cross-scope proposals were accepted in that same approval.
 - Tracking: enabled for preparation and implementation by existing root AGENTS.md. Milestone 1 (`sdd-docs-main`) and issues 1–9 match bundled definitions and associations, verified before repository writes. No implementation objects activated.
 - Publication: every owned commit is pushed and read back before progression. Reporting: Standard after Explicit bootstrap.
@@ -102,6 +102,8 @@ Material unresolved decisions: none; first PROJECT approval accepted the brief a
 
 - Pass 3, DOCS-004: `DECOMPOSITION.md` SHA-256 `d764fc0e6064547b3d8847894c41321adbbf3706f449aa1d31b4e13dc8ec32f6`; scoped autodoc/autoloop preapproval following first PROJECT approval. Current architecture/component responsibilities, required interfaces, verification seams and failure ownership reviewed; no duplicated rule owners. Publication and issue #4 closure must be read back before progression.
 
+- Pass 3, DOCS-005: `SPEC.md` SHA-256 `5ce6a6128863ba069de2ec09465164645f646b40dd81efd9d5f24c4a9dbe2394`; scoped autodoc/autoloop preapproval following first PROJECT approval. Current SPEC/design QC Ready; adjacent review report retains exact input identities, coverage, earlier observations and recheck. Apply the accepted lowest-occupied-cell rule; introduce one narrow Phase 4 with two delivery tasks and explicit milestone/phase reviews. This preserves Phases 1–3 and T-001–T-031 exactly. Publication and issue #5 closure must be read back before progression.
+
 ## Initialization and current reset
 
 - Original root-file presence: all four existed: AI_DISCLOSURE.md, SDD-MANAGER.md, AGENTS.md, SKILL_DISCOVERY_PROTOCOL.md. Copied root files: none.
@@ -112,4 +114,4 @@ Material unresolved decisions: none; first PROJECT approval accepted the brief a
 
 ## Pending transitions
 
-Publish/read back this DOCS-004 checkpoint, then close/read back issue #4. All prior checkpoint effects have been verified. Continue only after the required hosted effect is verified.
+Publish/read back this DOCS-005 checkpoint, then close/read back issue #5. All prior checkpoint effects have been verified. Continue only after the required hosted effect is verified.
