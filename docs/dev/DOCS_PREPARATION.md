@@ -4,7 +4,7 @@
 
 - Mode: autodoc/autoloop, explicitly requested on 2026-10-24 for six predefined cumulative scopes.
 - Delivery mode: strict multipass. No permission to change earlier phases/tasks has been supplied. Preserve their identities, scope, milestone membership, order, dependencies and exits; add subsequent ranges for subsequent scope.
-- Current pass: 2, Gameplay enhancements; cursor reset to DOCS-002. Retained documents are prior-scope inputs, not current acceptance.
+- Current pass: 2; DOCS-002 accepted; next DOCS-003.
 - Approval basis: first PROJECT explicitly approved by the user (“Approve”) on 2026-10-24. Later PROJECT approvals are waived, as announced in chat; subsequent document checkpoints and scope resets are preapproved by the selected mode after first approval. Newly discovered material choices are delegated under autoloop, with visible rationale. Initial cross-scope proposals were accepted in that same approval.
 - Tracking: enabled for preparation and implementation by existing root AGENTS.md. Milestone 1 (`sdd-docs-main`) and issues 1–9 match bundled definitions and associations, verified before repository writes. No implementation objects activated.
 - Publication: every owned commit is pushed and read back before progression. Reporting: Standard after Explicit bootstrap.
@@ -38,6 +38,8 @@ All entries originate in initial exploration during Pass 1. They were proposed b
 ### Pass 2 decision summary
 
 Carry forward the human-approved initial cross-scope decisions; adopt only Gameplay enhancements at this scope. The prior pass completed at `e233a7d69a9d264343bd9e5b70f2cc4da5c30bf0`. Preserve its PLAN and TASKS byte prefixes (SHA-256 `a73cc7aa97c8b6a2d3c1e09f2fa424683050b3513b83647e90ac5ff185c33081` / `9df8c56613358ed4d2b453c8fc72c3daa0dc5d54360373a11f6f7e28e06e4f19`); append only new delivery ranges. No prior range may change. Agent-owned detailed decisions are recorded with their owning artifacts below.
+
+Pass 2 delegated detail: Use the explicit ordered clockwise kick offsets in C3; 7-bag and Hold form Phase 2, landing/lock assistance Phase 3. Phase 2 retains failed-down timing until the bounded Phase 3 timing change. These are delegated delivery/contract details, not changes to Phase 1.
 
 ## Cross-scope decisions
 
@@ -74,6 +76,8 @@ Material unresolved decisions: none; first PROJECT approval accepted the brief a
 
 | Pass 1, DOCS-008 | `TASKS.md` SHA-256 `9df8c56613358ed4d2b453c8fc72c3daa0dc5d54360373a11f6f7e28e06e4f19`; scoped autodoc/autoloop preapproval following first PROJECT approval. TASKS/PLAN QC Ready; T-001–T-013, three delivery tasks per milestone plus mandatory reviews; see TASKS-REVIEW-REPORT.md. Authorized next boundary is Pass 2 reset, not package QC. Publication and issue #8 closure must be read back before progression. |
 
+| Pass 2, DOCS-002 | `PROJECT.md` SHA-256 `350b6d8ddd0d98b41db504cd99401fd334261d40be412d9ed5ef30e7f45b8f9e`; scoped autodoc/autoloop preapproval following first PROJECT approval. Current cumulative brief reviewed; inherited human-approved decisions retained. Use the explicit ordered clockwise kick offsets in C3; 7-bag and Hold form Phase 2, landing/lock assistance Phase 3. Phase 2 retains failed-down timing until the bounded Phase 3 timing change. These are delegated delivery/contract details, not changes to Phase 1. Publication and issue #2 closure must be read back before progression. |
+
 ## Initialization and current reset
 
 - Original root-file presence: all four existed: AI_DISCLOSURE.md, SDD-MANAGER.md, AGENTS.md, SKILL_DISCOVERY_PROTOCOL.md. Copied root files: none.
@@ -84,4 +88,4 @@ Material unresolved decisions: none; first PROJECT approval accepted the brief a
 
 ## Pending transitions
 
-Publish/read back reset to Pass 2, then verify reopening and association of existing issues #2–9; milestone 1 remains open. Do not author until all required effects are verified.
+Publish/read back this DOCS-002 checkpoint, then close/read back issue #2. All prior checkpoint effects have been verified. Continue only after the required hosted effect is verified.
