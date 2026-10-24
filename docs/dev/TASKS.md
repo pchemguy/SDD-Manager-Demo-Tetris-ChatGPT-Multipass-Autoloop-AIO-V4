@@ -122,3 +122,46 @@ All work is planned and unchecked. [PLAN](PLAN.md) owns phase/milestone boundari
     - [ ] Milestone 4.2 — Phase review
         - [ ] T-035 — Review, test and report phase 4
             Depends on: milestone 4.1 completed/closed. Review cross-milestone code, run phase exits/regressions, repair blockers, aggregate TODOs and update HANDOFF. Report: docs/dev/reports/phases/4/PHASE-REPORT.md. Publish before review issue/milestone closure; integrate only the complete verified phase. Release/version preparation follows the authorized release gate.
+
+## Phase 5 — Penetrator bonuses
+
+- [ ] Phase 5 — Penetrator bonuses
+    - [ ] Milestone 5.1 — Legal penetrator traversal
+        - [ ] T-036 — Implement mode-aware landing and transforms
+            Scope: src/game/geometry.ts, types and cavity fixtures. Depends on: Phase 4 completion, closure and published integration.
+            Contract: SPEC C10–C11 plus C7–C9 interaction regression under this phase’s recorded baseline; PLAN Phase 5 and layout ownership. Evidence: Cover separated legal cavities, bounds, rotations, no-landing rejection and unchanged ordinary projection.
+        - [ ] T-037 — Integrate penetrator descent and safe merge
+            Scope: src/game/session.ts, board merge and unit tests. Depends on: T-036.
+            Contract: SPEC C10–C11 plus C7–C9 interaction regression under this phase’s recorded baseline; PLAN Phase 5 and layout ownership. Evidence: Advance through overlap toward deepest landing; forbid intermediate lock and partial/overlapping final writes.
+        - [ ] T-038 — Verify penetrator landing and lock timing
+            Scope: geometry/session integration fixtures. Depends on: T-037.
+            Contract: SPEC C10–C11 plus C7–C9 interaction regression under this phase’s recorded baseline; PLAN Phase 5 and layout ownership. Evidence: Ghost/hard-drop use the same solver, full-interval grounding occurs only at legal target, and transforms update/cancel timers correctly.
+        - [ ] T-039 — Review, test and report milestone 5.1
+            Depends on: T-036, T-037, T-038. Review code and tests separately, exercise milestone exits/regressions, repair blockers and document TODO disposition. Report: docs/dev/reports/phases/5/5.1.md. Refresh HANDOFF; commit/push/read back before issue then milestone closure.
+    - [ ] Milestone 5.2 — Bonus and active-mode lifecycle
+        - [ ] T-040 — Implement activation and bounded bonus awards
+            Scope: session/types and lifecycle fixtures. Depends on: T-039.
+            Contract: SPEC C10–C11 plus C7–C9 interaction regression under this phase’s recorded baseline; PLAN Phase 5 and layout ownership. Evidence: Cover zero/one/three bonus states, repeat activation, no-landing no-spend and exact four-line award/cap.
+        - [ ] T-041 — Integrate active-mode Hold and restart rules
+            Scope: session/source integration and focused checks. Depends on: T-040.
+            Contract: SPEC C10–C11 plus C7–C9 interaction regression under this phase’s recorded baseline; PLAN Phase 5 and layout ownership. Evidence: Ignored active Hold does not draw/swap; lock spawns ordinary; restart clears mode/count; earning after spending is atomic.
+        - [ ] T-042 — Expose activation, white pieces and bonus indicator
+            Scope: input/status/renderer and browser checks. Depends on: T-041.
+            Contract: SPEC C10–C11 plus C7–C9 interaction regression under this phase’s recorded baseline; PLAN Phase 5 and layout ownership. Evidence: P activates once per press; all active penetrator cells/ghost are white; locked white cells remain blocking; symbol count updates on earn/spend.
+        - [ ] T-043 — Review, test and report milestone 5.2
+            Depends on: T-040, T-041, T-042. Review code and tests separately, exercise milestone exits/regressions, repair blockers and document TODO disposition. Report: docs/dev/reports/phases/5/5.2.md. Refresh HANDOFF; commit/push/read back before issue then milestone closure.
+    - [ ] Milestone 5.3 — Integrated penetrator gameplay
+        - [ ] T-044 — Exercise penetrator gameplay in both browsers
+            Scope: tests/browser/ and deterministic cavity fixtures. Depends on: T-043.
+            Contract: SPEC C10–C11 plus C7–C9 interaction regression under this phase’s recorded baseline; PLAN Phase 5 and layout ownership. Evidence: Inspect crossing shelf, legal lock, dynamic ghost, white output, ignored Hold and indicator updates through actual application events.
+        - [ ] T-045 — Run ordinary and penetrator regression scenarios
+            Scope: unit/browser suites and owning module fixes. Depends on: T-044.
+            Contract: SPEC C10–C11 plus C7–C9 interaction regression under this phase’s recorded baseline; PLAN Phase 5 and layout ownership. Evidence: Cover restart/game over, boundaries, no bonus, cap, bag/Hold, ordinary wall kicks and non-destructive traversal; repair violations.
+        - [ ] T-046 — Document and package bonus gameplay
+            Scope: README, module docs and build validation. Depends on: T-045.
+            Contract: SPEC C10–C11 plus C7–C9 interaction regression under this phase’s recorded baseline; PLAN Phase 5 and layout ownership. Evidence: Describe activation/award/cap/Hold restriction and validate the reproducible static build with both-browser evidence.
+        - [ ] T-047 — Review, test and report milestone 5.3
+            Depends on: T-044, T-045, T-046. Review code and tests separately, exercise milestone exits/regressions, repair blockers and document TODO disposition. Report: docs/dev/reports/phases/5/5.3.md. Refresh HANDOFF; commit/push/read back before issue then milestone closure.
+    - [ ] Milestone 5.4 — Phase review
+        - [ ] T-048 — Review, test and report phase 5
+            Depends on: milestone 5.1 completed/closed, milestone 5.2 completed/closed, milestone 5.3 completed/closed. Review cross-milestone code, run phase exits/regressions, repair blockers, aggregate TODOs and update HANDOFF. Report: docs/dev/reports/phases/5/PHASE-REPORT.md. Publish before review issue/milestone closure; integrate only the complete verified phase. Release/version preparation follows the authorized release gate.
