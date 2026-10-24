@@ -2,9 +2,9 @@
 
 ## Current gate
 
-State: Ready for the reviewed spec boundary. Pass 3. `PROJECT.md` SHA-256 `1ce5266517d6432f04353d807ad5642fa78d2c57be013352a28103b4b071abe3`; `ARCHITECTURE.md` SHA-256 `81fee8c3f146ac0dc0af9e51cdc2c490f8336613a6015479df36c27f047d6e24`; `DECOMPOSITION.md` SHA-256 `d764fc0e6064547b3d8847894c41321adbbf3706f449aa1d31b4e13dc8ec32f6`; `SPEC.md` SHA-256 `5ce6a6128863ba069de2ec09465164645f646b40dd81efd9d5f24c4a9dbe2394`.
+State: Ready for the reviewed spec boundary. Pass 4. `PROJECT.md` SHA-256 `be0c581fa00ac968b75f73920a77e534bf152d54ecea9dca271e1637954bbb88`; `ARCHITECTURE.md` SHA-256 `c1e46db70939fccbe3f7df53adb56b1bf1c001cf6df8a99859edfaec8d39067a`; `DECOMPOSITION.md` SHA-256 `ff3243f1e576416dcfb68c15e99f45a0b1702c17b5c873cc8c2e791f0e2374f7`; `SPEC.md` SHA-256 `95fa2d52f33ceba291209612c84a2b3eba9290b97b8bbd7bb3ab8e9f1f935ee8`.
 
-C9 maps to the presentation predicate and existing geometry projection. Reviewed exact row-9/10 and straddling semantics, transition refresh, no ghost after game over, pixel-independence and hidden hard-drop equality. C1–C8 ownership and behavior remain consistent; no new model state or unresolved findings.
+C10 maps mode-aware projection to geometry, safe final merge to board, mode/Hold/timer transitions to session and white drawing to renderer. C11 maps awards/cap to session and symbol count to status. Rechecked C1 color constraint, input mapping, C7 Hold restriction and C8 grounding so they cannot contradict traversal through overlap. Shelf/cavity/no-landing fixtures, repeated activation, restart, award cap and ghost/drop/visibility interactions have objective acceptance. No unresolved findings.
 
 ## Initial review
 
@@ -27,5 +27,13 @@ Confirmed unresolved findings: none. No runtime checks performed; document readi
 Pass 3 authoring/recheck. `PROJECT.md` SHA-256 `1ce5266517d6432f04353d807ad5642fa78d2c57be013352a28103b4b071abe3`; `ARCHITECTURE.md` SHA-256 `81fee8c3f146ac0dc0af9e51cdc2c490f8336613a6015479df36c27f047d6e24`; `DECOMPOSITION.md` SHA-256 `d764fc0e6064547b3d8847894c41321adbbf3706f449aa1d31b4e13dc8ec32f6`; `SPEC.md` SHA-256 `5ce6a6128863ba069de2ec09465164645f646b40dd81efd9d5f24c4a9dbe2394`.
 
 C9 maps to the presentation predicate and existing geometry projection. Reviewed exact row-9/10 and straddling semantics, transition refresh, no ghost after game over, pixel-independence and hidden hard-drop equality. C1–C8 ownership and behavior remain consistent; no new model state or unresolved findings.
+
+Confirmed unresolved findings: none. No runtime checks performed; document readiness only.
+
+## Revision 3
+
+Pass 4 authoring/recheck. `PROJECT.md` SHA-256 `be0c581fa00ac968b75f73920a77e534bf152d54ecea9dca271e1637954bbb88`; `ARCHITECTURE.md` SHA-256 `c1e46db70939fccbe3f7df53adb56b1bf1c001cf6df8a99859edfaec8d39067a`; `DECOMPOSITION.md` SHA-256 `ff3243f1e576416dcfb68c15e99f45a0b1702c17b5c873cc8c2e791f0e2374f7`; `SPEC.md` SHA-256 `95fa2d52f33ceba291209612c84a2b3eba9290b97b8bbd7bb3ab8e9f1f935ee8`.
+
+C10 maps mode-aware projection to geometry, safe final merge to board, mode/Hold/timer transitions to session and white drawing to renderer. C11 maps awards/cap to session and symbol count to status. Rechecked C1 color constraint, input mapping, C7 Hold restriction and C8 grounding so they cannot contradict traversal through overlap. Shelf/cavity/no-landing fixtures, repeated activation, restart, award cap and ghost/drop/visibility interactions have objective acceptance. No unresolved findings.
 
 Confirmed unresolved findings: none. No runtime checks performed; document readiness only.
