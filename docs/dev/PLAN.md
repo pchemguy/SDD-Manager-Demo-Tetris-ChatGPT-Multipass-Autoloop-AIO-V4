@@ -29,3 +29,39 @@ Outcome/exit: The built application is playable with documented controls and ver
 Exactly one phase code review/testing/report task, dependent on all delivery milestones being completed and closed. Verify cross-milestone interactions, applicable regressions, exits and TODO disposition; update HANDOFF in the owning completion commit.
 
 Phase exit: A static build supports a complete classic session and restart on both targets; all delivery reviews and the phase report pass. Scope is fixed-gravity, independent random generation, blocked rotation and failed-down locking; no modern assistance or settings. First playable version v0.1.0. Publish the completed boundary, integrate explicitly into main, verify merged state and publish before any authorized successor or release.
+
+## Phase 2 — Bag, kicks and Hold
+
+Depends on verified, integrated and published Phase 1, with required issue/milestone closures. Contract baseline: SPEC SHA-256 `347dd3035fb3ed5dab05177f74ac3389fe05bec2f38e68dfce6183d1983880a8`, C1–C7; C8 delay is deferred to Phase 3.
+
+### Milestone 2.1 — Reliable piece controls
+
+Outcome/exit: 7-bag generation and deterministic wall kicks integrate into the classic playable loop. Begins after the predecessor phase gate. Conclude with code review, applicable tests, blocker repair and a committed milestone report. Demonstrate the resulting capability and retain usability/risk evidence for any human continue/amend/simplify/stop decision.
+
+### Milestone 2.2 — Held-piece control
+
+Outcome/exit: Hold storage, once-per-piece eligibility and blocked replacement behavior are visible and tested. Depends on milestone 2.1 completion and closure. Conclude with code review, applicable tests, blocker repair and a committed milestone report. Demonstrate the resulting capability and retain usability/risk evidence for any human continue/amend/simplify/stop decision.
+
+### Milestone 2.3 — Phase review
+
+Exactly one phase code review/testing/report task, dependent on all delivery milestones being completed and closed. Verify cross-milestone interactions, applicable regressions, exits and TODO disposition; update HANDOFF in the owning completion commit.
+
+Phase exit: Playable 7-bag/kick/Hold controls with deterministic source and lifecycle evidence on both browsers; fixed gravity and failed-down locking remain this phase’s timing baseline. Ghost, hard drop and full-interval lock are deferred to Phase 3. Feature version v0.2.0. Publish the completed boundary, integrate explicitly into main, verify merged state and publish before any authorized successor or release.
+
+## Phase 3 — Landing assistance and delayed lock
+
+Depends on verified, integrated and published Phase 2, with required issue/milestone closures. Contract baseline: SPEC SHA-256 `347dd3035fb3ed5dab05177f74ac3389fe05bec2f38e68dfce6183d1983880a8`, C8 plus regression of C1–C7.
+
+### Milestone 3.1 — Consistent landing assistance
+
+Outcome/exit: One landing projection drives visible ghost and hard drop. Begins after the predecessor phase gate. Conclude with code review, applicable tests, blocker repair and a committed milestone report. Demonstrate the resulting capability and retain usability/risk evidence for any human continue/amend/simplify/stop decision.
+
+### Milestone 3.2 — Grounded interval locking
+
+Outcome/exit: A grounded active piece locks after one full simulation gravity interval, including hard drop. Depends on milestone 3.1 completion and closure. Conclude with code review, applicable tests, blocker repair and a committed milestone report. Demonstrate the resulting capability and retain usability/risk evidence for any human continue/amend/simplify/stop decision.
+
+### Milestone 3.3 — Phase review
+
+Exactly one phase code review/testing/report task, dependent on all delivery milestones being completed and closed. Verify cross-milestone interactions, applicable regressions, exits and TODO disposition; update HANDOFF in the owning completion commit.
+
+Phase exit: Ghost and hard drop share an exact ordinary projection, and all relevant actions obey full-interval locking. Both-browser rendering/interaction evidence and source/Hold/classic regressions pass. Feature version v0.3.0. Publish the completed boundary, integrate explicitly into main, verify merged state and publish before any authorized successor or release.

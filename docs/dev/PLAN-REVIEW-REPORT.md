@@ -2,9 +2,9 @@
 
 ## Current gate
 
-State: Ready for the reviewed plan boundary. Pass 1. `PROJECT.md` SHA-256 `e6e2c214d62582f96f847144decc7168608cf7efdb3dd47fc6d912c8eb40cf37`; `ARCHITECTURE.md` SHA-256 `67f5f3d4f77c3b8a0cca8308dd56ab441fa67c5f28a43ec2e9c10094ad3746ff`; `DECOMPOSITION.md` SHA-256 `f5e7e083c318ff1a6f25cb18bd933852aeaee1f8e8afe418dd5ec36b6af4ff58`; `SPEC.md` SHA-256 `a42f0f4f81623c13b197aff5ecb4d9cde4a8bd33154345bf3b29f91cd64688ff`; `PLAN.md` SHA-256 `a73cc7aa97c8b6a2d3c1e09f2fa424683050b3513b83647e90ac5ff185c33081`; `layout.md` SHA-256 `adbcc9417842239f2636759b46b318c89c55693ae1f8f9b06da31b47679113d3`.
+State: Ready for the reviewed plan boundary. Pass 2. `SPEC.md` SHA-256 `347dd3035fb3ed5dab05177f74ac3389fe05bec2f38e68dfce6183d1983880a8`; `PLAN.md` SHA-256 `4644cbb9761427ce98427fc898c0ca068378a47391f463cecc525d0dbd94efd0`.
 
-Combined PLAN/layout QC Ready for TASKS derivation. Model source and unit fixtures map to geometry/board/source/session; browser adapters/UI and app suites support milestone integration; build/CI/README own static delivery. Generated outputs and credentials are excluded. Existing plugin/policies are preserved; planned paths are not existence claims. Phase 1 has three cohesive delivery milestones plus one excluded phase review milestone; no earlier protected ranges exist.
+PLAN/SPEC strategy QC: Phase 2: 2 delivery milestone(s), plus one excluded single-task phase review; Phase 3: 2 delivery milestone(s), plus one excluded single-task phase review. Each new phase has a bounded integrated player outcome. Groups with one or two delivery milestones are retained because the scoped capability and its checks are cohesive; splitting would add handoff overhead without an independently useful product. Earlier ranges are byte-identical, not cumulatively regenerated. Contract coverage: Phase 2 → C1–C7; C8 delay is deferred to Phase 3; Phase 3 → C8 plus regression of C1–C7. No current-scope contract is omitted. Strategy Ready; TASKS remains blocked until combined layout recheck.
 
 ## Initial review
 
@@ -19,5 +19,13 @@ Confirmed unresolved findings: none. This is per-document conformance review; no
 Pass 1 authoring/recheck. `PROJECT.md` SHA-256 `e6e2c214d62582f96f847144decc7168608cf7efdb3dd47fc6d912c8eb40cf37`; `ARCHITECTURE.md` SHA-256 `67f5f3d4f77c3b8a0cca8308dd56ab441fa67c5f28a43ec2e9c10094ad3746ff`; `DECOMPOSITION.md` SHA-256 `f5e7e083c318ff1a6f25cb18bd933852aeaee1f8e8afe418dd5ec36b6af4ff58`; `SPEC.md` SHA-256 `a42f0f4f81623c13b197aff5ecb4d9cde4a8bd33154345bf3b29f91cd64688ff`; `PLAN.md` SHA-256 `a73cc7aa97c8b6a2d3c1e09f2fa424683050b3513b83647e90ac5ff185c33081`; `layout.md` SHA-256 `adbcc9417842239f2636759b46b318c89c55693ae1f8f9b06da31b47679113d3`.
 
 Combined PLAN/layout QC Ready for TASKS derivation. Model source and unit fixtures map to geometry/board/source/session; browser adapters/UI and app suites support milestone integration; build/CI/README own static delivery. Generated outputs and credentials are excluded. Existing plugin/policies are preserved; planned paths are not existence claims. Phase 1 has three cohesive delivery milestones plus one excluded phase review milestone; no earlier protected ranges exist.
+
+Confirmed unresolved findings: none. No runtime checks performed; document readiness only.
+
+## Revision 2
+
+Pass 2 authoring/recheck. `SPEC.md` SHA-256 `347dd3035fb3ed5dab05177f74ac3389fe05bec2f38e68dfce6183d1983880a8`; `PLAN.md` SHA-256 `4644cbb9761427ce98427fc898c0ca068378a47391f463cecc525d0dbd94efd0`.
+
+PLAN/SPEC strategy QC: Phase 2: 2 delivery milestone(s), plus one excluded single-task phase review; Phase 3: 2 delivery milestone(s), plus one excluded single-task phase review. Each new phase has a bounded integrated player outcome. Groups with one or two delivery milestones are retained because the scoped capability and its checks are cohesive; splitting would add handoff overhead without an independently useful product. Earlier ranges are byte-identical, not cumulatively regenerated. Contract coverage: Phase 2 → C1–C7; C8 delay is deferred to Phase 3; Phase 3 → C8 plus regression of C1–C7. No current-scope contract is omitted. Strategy Ready; TASKS remains blocked until combined layout recheck.
 
 Confirmed unresolved findings: none. No runtime checks performed; document readiness only.
