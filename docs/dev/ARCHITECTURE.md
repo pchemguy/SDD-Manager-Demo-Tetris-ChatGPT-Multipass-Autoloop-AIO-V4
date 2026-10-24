@@ -39,3 +39,7 @@ The model owns the shuffled bag cursor, held shape and Hold eligibility. A geome
 ## Projection visibility
 
 Presentation derives ghost visibility from the geometry-owned landing cells using a pure visibility predicate. Recompute after every state transition; visibility has no effect on collision, hard drop, source or lock state. Use board coordinates rather than rendered pixel height so resizing does not alter the midline rule.
+
+## Penetrator policy
+
+Geometry owns both ordinary and penetrator placement/projection under an explicit piece-mode argument. Penetrator traversal ignores occupied cells but requires an in-bounds candidate with a legal future landing; final board merge always enforces non-overlap. The session owns bonus count and the active mode, spends/awards them atomically, and gates Hold. The view consumes mode and bonus state, drawing white penetrator cells and the symbol count. Keep traversal policy separate from board merge validation so permissive falling cannot leak into locked-state writes.
