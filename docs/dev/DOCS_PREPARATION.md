@@ -4,7 +4,7 @@
 
 - Mode: autodoc/autoloop, explicitly requested on 2026-10-24 for six predefined cumulative scopes.
 - Delivery mode: strict multipass. No permission to change earlier phases/tasks has been supplied. Preserve their identities, scope, milestone membership, order, dependencies and exits; add subsequent ranges for subsequent scope.
-- Current pass: 1, playable classic baseline. Initialization complete; PROJECT proposal is next.
+- Current pass: 1, playable classic baseline. Initialization and DOCS-001 issue closure verified; first PROJECT proposal awaits human approval.
 - Approval basis: first PROJECT approval remains required. Later PROJECT approvals are waived, as announced in chat; subsequent document checkpoints and scope resets are preapproved by the selected mode after first approval. Newly discovered material choices are delegated under autoloop, with visible rationale. Initial cross-scope proposals below await that approval.
 - Tracking: enabled for preparation and implementation by existing root AGENTS.md. Milestone 1 (`sdd-docs-main`) and issues 1–9 match bundled definitions and associations, verified before repository writes. No implementation objects activated.
 - Publication: every owned commit is pushed and read back before progression. Reporting: Standard after Explicit bootstrap.
@@ -49,8 +49,8 @@ All entries originate in initial exploration during Pass 1. They are agent propo
 
 | Task | Current evidence / decision basis |
 | --- | --- |
-| DOCS-001 | Four pre-existing root files retained byte for byte against initial commit `ab6f437fc7b8d5bc1950502e0a28192fa1a684da`. Task list copied from running repository package with only DOCS-001 checked. Initialization publication and issue closure require readback. |
-| DOCS-002 | Pass 1 proposal not yet submitted; first human acceptance pending. |
+| DOCS-001 | Four pre-existing root files retained byte for byte against initial commit `ab6f437fc7b8d5bc1950502e0a28192fa1a684da`. Task list copied from running repository package with only DOCS-001 checked. Initialization commit `b4458065acc74d212b715c432378aaf45e84abef` pushed and exact ref read back; issue #1 closed as completed and read back. Connector writes returned integration-permission 403; supplied-token API client completed the supported closure. |
+| DOCS-002 | Pass 1 [PROJECT proposal](PROJECT.md), SHA-256 `e6e2c214d62582f96f847144decc7168608cf7efdb3dd47fc6d912c8eb40cf37`; first human acceptance pending, task and issue remain open. Scope reviewed against Pass 1: no future enhancements adopted. HTML/Canvas/TypeScript direction, testability, browser policy and explicit exclusions are proposed. Cross-scope choices remain proposals for this first review. README contains truthful project status and root disclosure/usage links. |
 | DOCS-003–008 | Not started. |
 | DOCS-009 | Not selected; remains unchecked through the autoloop stop. |
 
@@ -66,4 +66,4 @@ Material unresolved decisions: first PROJECT approval includes confirmation/corr
 
 ## Pending transitions
 
-Publish/read back initialization, then close/read back DOCS-001 issue #1. Prepare and publish the first PROJECT proposal without checking DOCS-002; obtain first human approval before dependent document work.
+Publish/read back the first PROJECT proposal, then obtain first human approval before dependent document work. DOCS-002 remains unchecked and issue #2 open. Approval must be recorded with the unchanged or revised accepted PROJECT and checked DOCS-002 in its own owning checkpoint, then pushed/read back before issue closure. No later document has been authored.
