@@ -4,7 +4,7 @@
 
 - Mode: autodoc/autoloop, explicitly requested on 2026-10-24 for six predefined cumulative scopes.
 - Delivery mode: strict multipass. No permission to change earlier phases/tasks has been supplied. Preserve their identities, scope, milestone membership, order, dependencies and exits; add subsequent ranges for subsequent scope.
-- Current pass: 1; DOCS-004 accepted; next DOCS-005.
+- Current pass: 1; DOCS-005 accepted; next DOCS-006.
 - Approval basis: first PROJECT explicitly approved by the user (“Approve”) on 2026-10-24. Later PROJECT approvals are waived, as announced in chat; subsequent document checkpoints and scope resets are preapproved by the selected mode after first approval. Newly discovered material choices are delegated under autoloop, with visible rationale. Initial cross-scope proposals were accepted in that same approval.
 - Tracking: enabled for preparation and implementation by existing root AGENTS.md. Milestone 1 (`sdd-docs-main`) and issues 1–9 match bundled definitions and associations, verified before repository writes. No implementation objects activated.
 - Publication: every owned commit is pushed and read back before progression. Reporting: Standard after Explicit bootstrap.
@@ -62,6 +62,8 @@ Material unresolved decisions: none; first PROJECT approval accepted the brief a
 
 | Pass 1, DOCS-004 | `DECOMPOSITION.md` SHA-256 `f5e7e083c318ff1a6f25cb18bd933852aeaee1f8e8afe418dd5ec36b6af4ff58`; scoped autodoc/autoloop preapproval following first PROJECT approval. Reviewed geometry/board/source/session ownership, controller/view dependency direction, explicit state and verification seams against accepted architecture. Publication and issue #4 closure must be read back before progression. |
 
+| Pass 1, DOCS-005 | `SPEC.md` SHA-256 `a42f0f4f81623c13b197aff5ecb4d9cde4a8bd33154345bf3b29f91cd64688ff`; scoped autodoc/autoloop preapproval following first PROJECT approval. SPEC/design QC Ready; see SPEC-REVIEW-REPORT.md. Fixed gravity, controls, score table and restart semantics are agent-selected contract precision under accepted direction. Publication and issue #5 closure must be read back before progression. |
+
 ## Initialization and current reset
 
 - Original root-file presence: all four existed: AI_DISCLOSURE.md, SDD-MANAGER.md, AGENTS.md, SKILL_DISCOVERY_PROTOCOL.md. Copied root files: none.
@@ -72,4 +74,4 @@ Material unresolved decisions: none; first PROJECT approval accepted the brief a
 
 ## Pending transitions
 
-Publish/read back this DOCS-004 checkpoint, then close/read back issue #4. All prior checkpoint effects have been verified. Continue only after the required hosted effect is verified.
+Publish/read back this DOCS-005 checkpoint, then close/read back issue #5. All prior checkpoint effects have been verified. Continue only after the required hosted effect is verified.
