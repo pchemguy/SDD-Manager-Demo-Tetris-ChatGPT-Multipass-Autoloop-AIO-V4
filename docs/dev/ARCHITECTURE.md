@@ -31,3 +31,7 @@ The game uses no network service and stores no game session. Binaries, browser p
 - The controller disposes all owned resources on teardown and never schedules concurrent game loops.
 
 Detailed responsibilities and verification seams are in [DECOMPOSITION](DECOMPOSITION.md); behavioral contracts belong in [SPEC](SPEC.md). These documents describe intended structure, not implemented modules.
+
+## Piece controls and landing
+
+The model owns the shuffled bag cursor, held shape and Hold eligibility. A geometry-owned landing projection is shared by the ghost and hard drop; the renderer does not independently scan the board. Lock timing belongs to session state and receives simulation time from the controller, so tests can exercise exact boundaries without a browser clock. Separate rotation candidate search, source generation and timing policy as focused functions, without a runtime rule-plugin framework.
