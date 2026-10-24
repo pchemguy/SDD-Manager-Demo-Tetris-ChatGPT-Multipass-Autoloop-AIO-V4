@@ -29,3 +29,7 @@ Geometry provides ordered rotation candidates and the ordinary landing projectio
 ## Ghost visibility responsibility
 
 A pure presentation predicate consumes landing cell rows and returns show/hide. Geometry remains the sole landing owner; the view never substitutes another landing when hidden. Cover upper-only, lower-only and straddling fixtures, plus movement/Hold/restart updates. The board remains 20 rows, so its midpoint is independent of Canvas dimensions.
+
+## Penetrator responsibilities
+
+Geometry provides the deepest legal landing for a shape/column/orientation and validates mode-aware transforms. Board merge retains unconditional in-bounds/non-overlap validation; occupied cells are never destroyed by falling. Session owns activation eligibility, bonus spending/earning/cap, active mode reset, Hold suppression and grounding at the penetrator landing. A locked cell carries its display color, including white from a penetrator, without retaining traversal ability. Status presents one symbol per available bonus. Ghost and hard drop consume the same mode-aware projection. Test seams include separated cavities, overlapping intermediate frames, rejected transforms, exhausted bonuses, four-line awards and exact lock timing.

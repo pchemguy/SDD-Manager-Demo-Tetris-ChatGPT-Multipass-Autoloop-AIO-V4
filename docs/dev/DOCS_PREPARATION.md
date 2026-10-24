@@ -4,7 +4,7 @@
 
 - Mode: autodoc/autoloop, explicitly requested on 2026-10-24 for six predefined cumulative scopes.
 - Delivery mode: strict multipass. No permission to change earlier phases/tasks has been supplied. Preserve their identities, scope, milestone membership, order, dependencies and exits; add subsequent ranges for subsequent scope.
-- Current pass: 4; DOCS-003 accepted; next DOCS-004.
+- Current pass: 4; DOCS-004 accepted; next DOCS-005.
 - Approval basis: first PROJECT explicitly approved by the user (“Approve”) on 2026-10-24. Later PROJECT approvals are waived, as announced in chat; subsequent document checkpoints and scope resets are preapproved by the selected mode after first approval. Newly discovered material choices are delegated under autoloop, with visible rationale. Initial cross-scope proposals were accepted in that same approval.
 - Tracking: enabled for preparation and implementation by existing root AGENTS.md. Milestone 1 (`sdd-docs-main`) and issues 1–9 match bundled definitions and associations, verified before repository writes. No implementation objects activated.
 - Publication: every owned commit is pushed and read back before progression. Reporting: Standard after Explicit bootstrap.
@@ -120,6 +120,8 @@ Material unresolved decisions: none; first PROJECT approval accepted the brief a
 
 - Pass 4, DOCS-003: `ARCHITECTURE.md` SHA-256 `c1e46db70939fccbe3f7df53adb56b1bf1c001cf6df8a99859edfaec8d39067a`; scoped autodoc/autoloop preapproval following first PROJECT approval. Current PROJECT conformance, single state ownership, dependency direction and new interactions reviewed. Unchanged acceptable structure reused without artificial changes. Publication and issue #3 closure must be read back before progression.
 
+- Pass 4, DOCS-004: `DECOMPOSITION.md` SHA-256 `ff3243f1e576416dcfb68c15e99f45a0b1702c17b5c873cc8c2e791f0e2374f7`; scoped autodoc/autoloop preapproval following first PROJECT approval. Current architecture/component responsibilities, required interfaces, verification seams and failure ownership reviewed; no duplicated rule owners. Publication and issue #4 closure must be read back before progression.
+
 ## Initialization and current reset
 
 - Original root-file presence: all four existed: AI_DISCLOSURE.md, SDD-MANAGER.md, AGENTS.md, SKILL_DISCOVERY_PROTOCOL.md. Copied root files: none.
@@ -130,4 +132,4 @@ Material unresolved decisions: none; first PROJECT approval accepted the brief a
 
 ## Pending transitions
 
-Publish/read back this DOCS-003 checkpoint, then close/read back issue #3. All prior checkpoint effects have been verified. Continue only after the required hosted effect is verified.
+Publish/read back this DOCS-004 checkpoint, then close/read back issue #4. All prior checkpoint effects have been verified. Continue only after the required hosted effect is verified.
