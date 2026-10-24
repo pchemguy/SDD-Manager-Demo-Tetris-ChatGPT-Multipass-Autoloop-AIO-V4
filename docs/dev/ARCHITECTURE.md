@@ -35,3 +35,7 @@ Detailed responsibilities and verification seams are in [DECOMPOSITION](DECOMPOS
 ## Piece controls and landing
 
 The model owns the shuffled bag cursor, held shape and Hold eligibility. A geometry-owned landing projection is shared by the ghost and hard drop; the renderer does not independently scan the board. Lock timing belongs to session state and receives simulation time from the controller, so tests can exercise exact boundaries without a browser clock. Separate rotation candidate search, source generation and timing policy as focused functions, without a runtime rule-plugin framework.
+
+## Projection visibility
+
+Presentation derives ghost visibility from the geometry-owned landing cells using a pure visibility predicate. Recompute after every state transition; visibility has no effect on collision, hard drop, source or lock state. Use board coordinates rather than rendered pixel height so resizing does not alter the midline rule.
