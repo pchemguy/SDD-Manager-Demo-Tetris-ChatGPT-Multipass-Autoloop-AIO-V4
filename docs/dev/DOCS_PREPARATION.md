@@ -4,7 +4,7 @@
 
 - Mode: autodoc/autoloop, explicitly requested on 2026-10-24 for six predefined cumulative scopes.
 - Delivery mode: strict multipass. No permission to change earlier phases/tasks has been supplied. Preserve their identities, scope, milestone membership, order, dependencies and exits; add subsequent ranges for subsequent scope.
-- Current pass: 3, Conditional ghost visibility; cursor reset to DOCS-002. Retained documents are prior-scope inputs, not current acceptance.
+- Current pass: 3; DOCS-002 accepted; next DOCS-003.
 - Approval basis: first PROJECT explicitly approved by the user (“Approve”) on 2026-10-24. Later PROJECT approvals are waived, as announced in chat; subsequent document checkpoints and scope resets are preapproved by the selected mode after first approval. Newly discovered material choices are delegated under autoloop, with visible rationale. Initial cross-scope proposals were accepted in that same approval.
 - Tracking: enabled for preparation and implementation by existing root AGENTS.md. Milestone 1 (`sdd-docs-main`) and issues 1–9 match bundled definitions and associations, verified before repository writes. No implementation objects activated.
 - Publication: every owned commit is pushed and read back before progression. Reporting: Standard after Explicit bootstrap.
@@ -44,6 +44,8 @@ Pass 2 delegated detail: Use the explicit ordered clockwise kick offsets in C3; 
 ### Pass 3 decision summary
 
 Carry forward the human-approved initial cross-scope decisions; adopt only Conditional ghost visibility at this scope. The prior pass completed at `993652236612980415b9f70da17c722de778e5d5`. Preserve its PLAN and TASKS byte prefixes (SHA-256 `4644cbb9761427ce98427fc898c0ca068378a47391f463cecc525d0dbd94efd0` / `57aef71d8c45f90998f769ae0bd7deeee557391b1c1b3560a82755bebfdf5adb`); append only new delivery ranges. No prior range may change. Agent-owned detailed decisions are recorded with their owning artifacts below.
+
+Pass 3 delegated detail: Apply the accepted lowest-occupied-cell rule; introduce one narrow Phase 4 with two delivery tasks and explicit milestone/phase reviews. This preserves Phases 1–3 and T-001–T-031 exactly.
 
 ## Cross-scope decisions
 
@@ -94,6 +96,8 @@ Material unresolved decisions: none; first PROJECT approval accepted the brief a
 
 - Pass 2, DOCS-008: `TASKS.md` SHA-256 `57aef71d8c45f90998f769ae0bd7deeee557391b1c1b3560a82755bebfdf5adb`; scoped autodoc/autoloop preapproval following first PROJECT approval. Current TASKS/PLAN QC Ready; new ranges appended with strict earlier byte-prefix preservation. See TASKS-REVIEW-REPORT.md for counts, scope review and exact input identities. Publication and issue #8 closure must be read back before progression.
 
+- Pass 3, DOCS-002: `PROJECT.md` SHA-256 `1ce5266517d6432f04353d807ad5642fa78d2c57be013352a28103b4b071abe3`; scoped autodoc/autoloop preapproval following first PROJECT approval. Current cumulative brief reviewed; inherited human-approved decisions retained. Apply the accepted lowest-occupied-cell rule; introduce one narrow Phase 4 with two delivery tasks and explicit milestone/phase reviews. This preserves Phases 1–3 and T-001–T-031 exactly. Publication and issue #2 closure must be read back before progression.
+
 ## Initialization and current reset
 
 - Original root-file presence: all four existed: AI_DISCLOSURE.md, SDD-MANAGER.md, AGENTS.md, SKILL_DISCOVERY_PROTOCOL.md. Copied root files: none.
@@ -104,4 +108,4 @@ Material unresolved decisions: none; first PROJECT approval accepted the brief a
 
 ## Pending transitions
 
-Publish/read back reset to Pass 3, then verify reopening and association of existing issues #2–9; milestone 1 remains open. Do not author until all required effects are verified.
+Publish/read back this DOCS-002 checkpoint, then close/read back issue #2. All prior checkpoint effects have been verified. Continue only after the required hosted effect is verified.
