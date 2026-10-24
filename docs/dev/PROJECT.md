@@ -8,7 +8,7 @@ Provide a small, playable single-player Tetris game for people using a desktop b
 
 The game presents a 10×20 board and falling pieces drawn from the seven tetromino shapes. The player moves pieces horizontally, rotates them and accelerates their descent. Gravity advances the game automatically. Pieces settle into the board, completed rows disappear, and the displayed score increases according to the number of rows cleared. A blocked spawn ends the session; restart clears the board and score and begins a new game.
 
-Keep the experience deliberately small: a fixed gravity speed, deterministic wall-kick rotation, 7-bag piece generation and a full gravity-interval lock delay. Hold allows the current piece to be reserved once per falling-piece lifecycle. A ghost previews its landing whenever that projection reaches the lower half of the board, and hard drop moves it directly to that position while retaining the normal lock delay. Provide visible keyboard instructions, a readable score and game-over state, and a restart control. Use a distinct non-white color for each ordinary piece shape so its geometry remains visible against the board.
+Keep the experience deliberately small: a fixed gravity speed, deterministic wall-kick rotation, 7-bag piece generation and a full gravity-interval lock delay. Hold allows the current piece to be reserved once per falling-piece lifecycle. A ghost previews its landing whenever that projection reaches the lower half of the board, and hard drop moves it directly to that position while retaining the normal lock delay. Provide visible keyboard instructions, a readable score and game-over state, and a restart control. Use a distinct non-white color for each ordinary piece shape so its geometry remains visible against the board. A bonus can turn the active piece into a white penetrator that traverses occupied cells without removing them, then locks only in a legal non-overlapping position. Four-line clears earn bonuses up to a limit of three, displayed as one side-panel symbol each. Hold is unavailable while a penetrator is active.
 
 ## Delivery constraints and quality
 
@@ -18,6 +18,6 @@ Prioritize Chromium and include Playwright-managed Firefox for browser verificat
 
 ## Scope limits
 
-The intended game contains classic movement, rotation, descent, settling, line clearing, score, game over and restart. Hold, ghost projection, 7-bag generation, wall kicks, hard drop and delayed locking are included. Conditional ghost visibility is included. Next-piece preview, penetrator abilities and player settings are outside this scope.
+The intended game contains classic movement, rotation, descent, settling, line clearing, score, game over and restart. Hold, ghost projection, 7-bag generation, wall kicks, hard drop and delayed locking are included. Conditional ghost visibility is included. Penetrator abilities and a side-panel bonus indicator are included. Next-piece preview and player settings are outside this scope.
 
 Multiplayer, accounts, online leaderboards, mobile touch controls and audio are excluded. A keyboard-focused desktop experience is the supported starting point. Exact controls, timing, score values and detailed acceptance cases belong in the specification; they remain agent-selected details within this direction.
