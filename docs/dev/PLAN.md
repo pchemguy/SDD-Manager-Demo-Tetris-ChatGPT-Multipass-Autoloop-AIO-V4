@@ -79,3 +79,25 @@ Outcome/exit: Upper-only projections hide while lower/straddling landings show; 
 Exactly one phase code review/testing/report task, dependent on all delivery milestones being completed and closed. Verify cross-milestone interactions, applicable regressions, exits and TODO disposition; update HANDOFF in the owning completion commit.
 
 Phase exit: Dynamic visibility obeys the occupied-cell midline predicate while all landing/locking/controls remain usable. One narrow delivery milestone is intentional: separate phases for a predicate and its integration would fragment this small behavior. Feature version v0.4.0. Publish the completed boundary, integrate explicitly into main, verify merged state and publish before any authorized successor or release.
+
+## Phase 5 — Penetrator bonuses
+
+Depends on verified, integrated and published Phase 4, with required issue/milestone closures. Contract baseline: SPEC SHA-256 `95fa2d52f33ceba291209612c84a2b3eba9290b97b8bbd7bb3ab8e9f1f935ee8`, C10–C11 plus C7–C9 interaction regression.
+
+### Milestone 5.1 — Legal penetrator traversal
+
+Outcome/exit: The model can cross occupied intermediate cells and still identify a safe deepest final placement. Begins after the predecessor phase gate. Conclude with code review, applicable tests, blocker repair and a committed milestone report. Demonstrate the resulting capability and retain usability/risk evidence for any human continue/amend/simplify/stop decision.
+
+### Milestone 5.2 — Bonus and active-mode lifecycle
+
+Outcome/exit: Activation spends one bonus; four-line settlement awards once up to three, and Hold is suppressed while active. Depends on milestone 5.1 completion and closure. Conclude with code review, applicable tests, blocker repair and a committed milestone report. Demonstrate the resulting capability and retain usability/risk evidence for any human continue/amend/simplify/stop decision.
+
+### Milestone 5.3 — Integrated penetrator gameplay
+
+Outcome/exit: The built game demonstrates safe traversal, matching projection and stable classic/modern behavior. Depends on milestone 5.2 completion and closure. Conclude with code review, applicable tests, blocker repair and a committed milestone report. Demonstrate the resulting capability and retain usability/risk evidence for any human continue/amend/simplify/stop decision.
+
+### Milestone 5.4 — Phase review
+
+Exactly one phase code review/testing/report task, dependent on all delivery milestones being completed and closed. Verify cross-milestone interactions, applicable regressions, exits and TODO disposition; update HANDOFF in the owning completion commit.
+
+Phase exit: Penetrator traversal never destroys occupied cells or commits overlap; solver equality, active Hold restriction, bonus cap/spending and white rendering are verified with full gameplay regressions. Feature version v0.5.0. Publish the completed boundary, integrate explicitly into main, verify merged state and publish before any authorized successor or release.
