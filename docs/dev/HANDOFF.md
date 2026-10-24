@@ -1,6 +1,6 @@
 # Project handoff
 
-Checkpoint: Pass 1 DOCS-008, accepted document set through TASKS.
+Checkpoint: authorized reset to Pass 2 — Gameplay enhancements.
 
 ## Workflow and sources
 
@@ -16,4 +16,4 @@ Working branch design-docs/main; creation parent and eventual integration target
 
 ## Pending work and next action
 
-Publish/read back this TASKS completion and close/read back issue #8. Then perform the authorized reset to Pass 2, reopen the same issues #2–9 and verify before authoring. Reconstruct later effects from DOCS_PREPARATION, Git and provider state; this snapshot cannot establish its own later publication.
+Publish/read back this reset, then reopen/read back the same issues #2–9. Retain issue #1 closed and milestone 1 open. Resume PROJECT only after all effects are verified. Prior accepted range checkpoint: `e233a7d69a9d264343bd9e5b70f2cc4da5c30bf0`. Strict preservation and original final stop remain controlling.

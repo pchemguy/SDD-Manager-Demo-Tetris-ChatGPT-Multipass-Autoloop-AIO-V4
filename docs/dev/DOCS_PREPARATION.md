@@ -4,7 +4,7 @@
 
 - Mode: autodoc/autoloop, explicitly requested on 2026-10-24 for six predefined cumulative scopes.
 - Delivery mode: strict multipass. No permission to change earlier phases/tasks has been supplied. Preserve their identities, scope, milestone membership, order, dependencies and exits; add subsequent ranges for subsequent scope.
-- Current pass: 1; DOCS-008 accepted; next authorized next predefined reset.
+- Current pass: 2, Gameplay enhancements; cursor reset to DOCS-002. Retained documents are prior-scope inputs, not current acceptance.
 - Approval basis: first PROJECT explicitly approved by the user (“Approve”) on 2026-10-24. Later PROJECT approvals are waived, as announced in chat; subsequent document checkpoints and scope resets are preapproved by the selected mode after first approval. Newly discovered material choices are delegated under autoloop, with visible rationale. Initial cross-scope proposals were accepted in that same approval.
 - Tracking: enabled for preparation and implementation by existing root AGENTS.md. Milestone 1 (`sdd-docs-main`) and issues 1–9 match bundled definitions and associations, verified before repository writes. No implementation objects activated.
 - Publication: every owned commit is pushed and read back before progression. Reporting: Standard after Explicit bootstrap.
@@ -34,6 +34,10 @@ All entries originate in initial exploration during Pass 1. They were proposed b
 | Defaults | Dynamic ghost; hard drop, preview and Hold on; full-interval general lock; hard drop follows general. Session-only settings initially; persistence is added separately. | Agent recommendation matching preceding gameplay behavior. | Passes 5–6; accepted. |
 | Invalid persistence values | Validate URL and cookie independently. Invalid values count as absent, allowing the next valid source. Do not save invalid URL values to cookies. Duplicate URL keys count as invalid for that setting. Preserve unrelated query parameters. Cookie unavailability must not stop gameplay or in-page changes. | Agent proposal preserving per-setting precedence and graceful failure. | Pass 6; accepted. |
 | Verification and releases | Chromium primary and Playwright-managed Firefox secondary, headless and isolated under root browser policy. Plan a tested static build. First playable release v0.1.0; subsequent bounded feature phases increment minor version, patch versions for compatible fixes. Release only after authorized implementation phase verification and published integration. | Browser policy, user release instruction, agent version recommendation. | All delivery scopes; accepted. Browser provisioning is not attempted for document-only work. |
+
+### Pass 2 decision summary
+
+Carry forward the human-approved initial cross-scope decisions; adopt only Gameplay enhancements at this scope. The prior pass completed at `e233a7d69a9d264343bd9e5b70f2cc4da5c30bf0`. Preserve its PLAN and TASKS byte prefixes (SHA-256 `a73cc7aa97c8b6a2d3c1e09f2fa424683050b3513b83647e90ac5ff185c33081` / `9df8c56613358ed4d2b453c8fc72c3daa0dc5d54360373a11f6f7e28e06e4f19`); append only new delivery ranges. No prior range may change. Agent-owned detailed decisions are recorded with their owning artifacts below.
 
 ## Cross-scope decisions
 
@@ -76,8 +80,8 @@ Material unresolved decisions: none; first PROJECT approval accepted the brief a
 - Verification: byte comparison with their initial committed versions passed for all four. No mixed-presence pause applies.
 - Manual provenance: default enabled. Base `ab6f437fc7b8d5bc1950502e0a28192fa1a684da`; scaffold seed `2647e55f939639533412b0a645cb2fe2150b4386` on retained `design-docs/ai-logs`; explicit main merge `38b5c4bf8d5c945a4eaf8dffb0a03610b8ace7f7`. Both pushes and exact remote readbacks succeeded with confirmed process cleanup. Two scaffold assets match package bytes. No conversations recorded.
 - Documentation branch: design-docs/main from main at the verified scaffold merge above.
-- Current reset: none. No prior-pass delivery ranges exist yet.
+- Current reset: Pass 1 completed at `e233a7d69a9d264343bd9e5b70f2cc4da5c30bf0`; advance to predefined Pass 2 under first PROJECT approval/autoloop. Preserve documents and IDs; reopen DOCS-002–009 and existing issues #2–9 after this reset publication.
 
 ## Pending transitions
 
-Publish/read back this DOCS-008 checkpoint, then close/read back issue #8. All prior checkpoint effects have been verified. Continue only after the required hosted effect is verified.
+Publish/read back reset to Pass 2, then verify reopening and association of existing issues #2–9; milestone 1 remains open. Do not author until all required effects are verified.
