@@ -35,4 +35,8 @@ Extend `src/game/types.ts` with active mode, bonus count and locked display colo
 
 ## Live configuration ownership
 
-`src/game/settings.ts` owns types, value validation and defaults; `session.ts` owns settings transitions and policy effects. `src/ui/settings.ts` owns labeled controls, while status renders source preview and selected state. `tests/unit/settings.test.ts` and session/source fixtures cover value domains and timer/sequence behavior; browser tests cover actual controls, focus, immediate drawing, restart retention and reload reset. No cookie/URL storage module belongs to this delivery boundary.
+`src/game/settings.ts` owns types, value validation and defaults; `session.ts` owns settings transitions and policy effects. `src/ui/settings.ts` owns labeled controls, while status renders source preview and selected state. `tests/unit/settings.test.ts` and session/source fixtures cover value domains and timer/sequence behavior; browser tests cover actual controls, focus, immediate drawing, restart retention and reload reset. Browser persistence has a separate adapter, leaving game/UI ownership unchanged.
+
+## Persistence ownership
+
+`src/browser/persistence.ts` owns URL/cookie parsing, cookie writes and History side effects; `src/game/settings.ts` owns reusable pure validation/resolution without browser imports. `tests/unit/settings.test.ts` covers all keys, mixed precedence and invalid domains; adapter fixtures cover failures. `tests/browser/` verifies real cookies, query updates, default synchronization, unrelated-URL preservation and reload in isolated contexts. Persistence availability feedback belongs in `src/ui/settings.ts`. No gameplay or browser binaries are persisted in these cookies.

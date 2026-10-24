@@ -2,9 +2,9 @@
 
 ## Current gate
 
-State: Ready for the reviewed plan boundary. Pass 6. `SPEC.md` SHA-256 `94ccb2ea93492dd2c584512a715c887d53b2676ae78e6dd3204d57ae841d4524`; `PLAN.md` SHA-256 `58ddb0d62c7d64ebdf1e6c506cb49b6fbf8b98e60e32191b858dbc07928bf221`.
+State: Ready for the reviewed plan boundary. Pass 6. `PROJECT.md` SHA-256 `60b3cdb190f97e48451d4d401f4aae170de815f425f06a9aec07c59fa45f6119`; `ARCHITECTURE.md` SHA-256 `9f3719756878e527de4e7cf36b1f5a9bb42a015e2f0830c282a1db80aedd0ec7`; `DECOMPOSITION.md` SHA-256 `dfcd202cfdf7206502dcd9894945042b1e8c158cc9c887d07d3e1fe7c77cfb19`; `SPEC.md` SHA-256 `94ccb2ea93492dd2c584512a715c887d53b2676ae78e6dd3204d57ae841d4524`; `PLAN.md` SHA-256 `58ddb0d62c7d64ebdf1e6c506cb49b6fbf8b98e60e32191b858dbc07928bf221`; `layout.md` SHA-256 `f9a5fca5bc7dce0be5d310c8d5c87af798b76c2b33aede5371936b3f89bebf96`.
 
-PLAN/SPEC strategy QC: Phase 7: 2 delivery milestone(s), plus one excluded single-task phase review. Each new phase has a bounded integrated player outcome. Groups with one or two delivery milestones are retained because the scoped capability and its checks are cohesive; splitting would add handoff overhead without an independently useful product. Earlier ranges are byte-identical, not cumulatively regenerated. Contract coverage: Phase 7 → C13 plus C12 behavior and C1–C11 regression. No current-scope contract is omitted. Strategy Ready; TASKS remains blocked until combined layout recheck.
+Combined PLAN/layout QC Ready. PLAN/SPEC strategy QC: Phase 7: 2 delivery milestone(s), plus one excluded single-task phase review. Each new phase has a bounded integrated player outcome. Groups with one or two delivery milestones are retained because the scoped capability and its checks are cohesive; splitting would add handoff overhead without an independently useful product. Earlier ranges are byte-identical, not cumulatively regenerated. Contract coverage: Phase 7 → C13 plus C12 behavior and C1–C11 regression. No current-scope contract is omitted. Source/test/UI ownership and integration routes checked; layout supports every component and planned milestone. Planned paths are not existence claims; no generated output or plugin source is product work.
 
 ## Initial review
 
@@ -91,5 +91,13 @@ Confirmed unresolved findings: none. No runtime checks performed; document readi
 Pass 6 authoring/recheck. `SPEC.md` SHA-256 `94ccb2ea93492dd2c584512a715c887d53b2676ae78e6dd3204d57ae841d4524`; `PLAN.md` SHA-256 `58ddb0d62c7d64ebdf1e6c506cb49b6fbf8b98e60e32191b858dbc07928bf221`.
 
 PLAN/SPEC strategy QC: Phase 7: 2 delivery milestone(s), plus one excluded single-task phase review. Each new phase has a bounded integrated player outcome. Groups with one or two delivery milestones are retained because the scoped capability and its checks are cohesive; splitting would add handoff overhead without an independently useful product. Earlier ranges are byte-identical, not cumulatively regenerated. Contract coverage: Phase 7 → C13 plus C12 behavior and C1–C11 regression. No current-scope contract is omitted. Strategy Ready; TASKS remains blocked until combined layout recheck.
+
+Confirmed unresolved findings: none. No runtime checks performed; document readiness only.
+
+## Revision 11
+
+Pass 6 authoring/recheck. `PROJECT.md` SHA-256 `60b3cdb190f97e48451d4d401f4aae170de815f425f06a9aec07c59fa45f6119`; `ARCHITECTURE.md` SHA-256 `9f3719756878e527de4e7cf36b1f5a9bb42a015e2f0830c282a1db80aedd0ec7`; `DECOMPOSITION.md` SHA-256 `dfcd202cfdf7206502dcd9894945042b1e8c158cc9c887d07d3e1fe7c77cfb19`; `SPEC.md` SHA-256 `94ccb2ea93492dd2c584512a715c887d53b2676ae78e6dd3204d57ae841d4524`; `PLAN.md` SHA-256 `58ddb0d62c7d64ebdf1e6c506cb49b6fbf8b98e60e32191b858dbc07928bf221`; `layout.md` SHA-256 `f9a5fca5bc7dce0be5d310c8d5c87af798b76c2b33aede5371936b3f89bebf96`.
+
+Combined PLAN/layout QC Ready. PLAN/SPEC strategy QC: Phase 7: 2 delivery milestone(s), plus one excluded single-task phase review. Each new phase has a bounded integrated player outcome. Groups with one or two delivery milestones are retained because the scoped capability and its checks are cohesive; splitting would add handoff overhead without an independently useful product. Earlier ranges are byte-identical, not cumulatively regenerated. Contract coverage: Phase 7 → C13 plus C12 behavior and C1–C11 regression. No current-scope contract is omitted. Source/test/UI ownership and integration routes checked; layout supports every component and planned milestone. Planned paths are not existence claims; no generated output or plugin source is product work.
 
 Confirmed unresolved findings: none. No runtime checks performed; document readiness only.
