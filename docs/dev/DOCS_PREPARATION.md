@@ -4,7 +4,7 @@
 
 - Mode: autodoc/autoloop, explicitly requested on 2026-10-24 for six predefined cumulative scopes.
 - Delivery mode: strict multipass. No permission to change earlier phases/tasks has been supplied. Preserve their identities, scope, milestone membership, order, dependencies and exits; add subsequent ranges for subsequent scope.
-- Current pass: 3; DOCS-008 accepted; next authorized next predefined reset.
+- Current pass: 4, Penetrator mode; cursor reset to DOCS-002. Retained documents are prior-scope inputs, not current acceptance.
 - Approval basis: first PROJECT explicitly approved by the user (“Approve”) on 2026-10-24. Later PROJECT approvals are waived, as announced in chat; subsequent document checkpoints and scope resets are preapproved by the selected mode after first approval. Newly discovered material choices are delegated under autoloop, with visible rationale. Initial cross-scope proposals were accepted in that same approval.
 - Tracking: enabled for preparation and implementation by existing root AGENTS.md. Milestone 1 (`sdd-docs-main`) and issues 1–9 match bundled definitions and associations, verified before repository writes. No implementation objects activated.
 - Publication: every owned commit is pushed and read back before progression. Reporting: Standard after Explicit bootstrap.
@@ -46,6 +46,10 @@ Pass 2 delegated detail: Use the explicit ordered clockwise kick offsets in C3; 
 Carry forward the human-approved initial cross-scope decisions; adopt only Conditional ghost visibility at this scope. The prior pass completed at `993652236612980415b9f70da17c722de778e5d5`. Preserve its PLAN and TASKS byte prefixes (SHA-256 `4644cbb9761427ce98427fc898c0ca068378a47391f463cecc525d0dbd94efd0` / `57aef71d8c45f90998f769ae0bd7deeee557391b1c1b3560a82755bebfdf5adb`); append only new delivery ranges. No prior range may change. Agent-owned detailed decisions are recorded with their owning artifacts below.
 
 Pass 3 delegated detail: Apply the accepted lowest-occupied-cell rule; introduce one narrow Phase 4 with two delivery tasks and explicit milestone/phase reviews. This preserves Phases 1–3 and T-001–T-031 exactly.
+
+### Pass 4 decision summary
+
+Carry forward the human-approved initial cross-scope decisions; adopt only Penetrator mode at this scope. The prior pass completed at `e9b27c213f629df105eb89ceb787e88b526d79dc`. Preserve its PLAN and TASKS byte prefixes (SHA-256 `fbfd7385877c1f8e96a7f65ab96eb80d998257f27ab7d5c80d098bac5cac9b45` / `74e6110c7dce783e5b6b760419517262e5b2403eeafb1216fbca7fe1e74638f1`); append only new delivery ranges. No prior range may change. Agent-owned detailed decisions are recorded with their owning artifacts below.
 
 ## Cross-scope decisions
 
@@ -116,8 +120,8 @@ Material unresolved decisions: none; first PROJECT approval accepted the brief a
 - Verification: byte comparison with their initial committed versions passed for all four. No mixed-presence pause applies.
 - Manual provenance: default enabled. Base `ab6f437fc7b8d5bc1950502e0a28192fa1a684da`; scaffold seed `2647e55f939639533412b0a645cb2fe2150b4386` on retained `design-docs/ai-logs`; explicit main merge `38b5c4bf8d5c945a4eaf8dffb0a03610b8ace7f7`. Both pushes and exact remote readbacks succeeded with confirmed process cleanup. Two scaffold assets match package bytes. No conversations recorded.
 - Documentation branch: design-docs/main from main at the verified scaffold merge above.
-- Current reset: Pass 2 completed at `993652236612980415b9f70da17c722de778e5d5`; advance to predefined Pass 3 under first PROJECT approval/autoloop. Preserve documents and IDs; reopen DOCS-002–009 and existing issues #2–9 after this reset publication.
+- Current reset: Pass 3 completed at `e9b27c213f629df105eb89ceb787e88b526d79dc`; advance to predefined Pass 4 under first PROJECT approval/autoloop. Preserve documents and IDs; reopen DOCS-002–009 and existing issues #2–9 after this reset publication.
 
 ## Pending transitions
 
-Publish/read back this DOCS-008 checkpoint, then close/read back issue #8. All prior checkpoint effects have been verified. Continue only after the required hosted effect is verified.
+Publish/read back reset to Pass 4, then verify reopening and association of existing issues #2–9; milestone 1 remains open. Do not author until all required effects are verified.
