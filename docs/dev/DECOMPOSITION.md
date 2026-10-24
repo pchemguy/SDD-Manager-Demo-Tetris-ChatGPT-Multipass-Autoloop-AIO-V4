@@ -25,3 +25,7 @@ Use simple TypeScript data records for Board, Piece and GameState, and a closed 
 ## Assisted piece lifecycle
 
 Geometry provides ordered rotation candidates and the ordinary landing projection. Piece source owns a shuffled seven-shape bag and cursor. Session owns held shape, per-piece Hold eligibility, grounded-since timestamp and gravity accumulator; it clears timing at spawn and settles atomically. Renderer reads a derived ghost and optional held-shape snapshot; it has no authority to advance the bag. Hold uses the same spawn validation as normal generation. The input adapter maps Space to hard drop and C to Hold, filtering repeated activation. Test seams cover bag boundaries, blocked swaps, kick selection, landing equality and exact lock expiry.
+
+## Ghost visibility responsibility
+
+A pure presentation predicate consumes landing cell rows and returns show/hide. Geometry remains the sole landing owner; the view never substitutes another landing when hidden. Cover upper-only, lower-only and straddling fixtures, plus movement/Hold/restart updates. The board remains 20 rows, so its midpoint is independent of Canvas dimensions.
