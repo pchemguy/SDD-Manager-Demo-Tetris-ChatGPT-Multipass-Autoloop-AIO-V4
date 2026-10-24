@@ -1,6 +1,6 @@
 # Project handoff
 
-Checkpoint: Pass 2 DOCS-008, accepted document set through TASKS.
+Checkpoint: authorized reset to Pass 3 — Conditional ghost visibility.
 
 ## Workflow and sources
 
@@ -16,4 +16,4 @@ Working branch design-docs/main; creation parent and eventual integration target
 
 ## Pending work and next action
 
-Publish/read back this TASKS completion and close/read back issue #8. Then perform the authorized reset to Pass 3, reopen the same issues #2–9 and verify before authoring. Reconstruct later effects from DOCS_PREPARATION, Git and provider state; this snapshot cannot establish its own later publication.
+Publish/read back this reset, then reopen/read back the same issues #2–9. Retain issue #1 closed and milestone 1 open. Resume PROJECT only after all effects are verified. Prior accepted range checkpoint: `993652236612980415b9f70da17c722de778e5d5`. Strict preservation and original final stop remain controlling.
