@@ -2,9 +2,9 @@
 
 ## Current gate
 
-State: Ready for the reviewed spec boundary. Pass 5. `PROJECT.md` SHA-256 `d8e46642abf6a5649038fc64ead12a4a5df19dea1e84eaa484108cfdffac957f`; `ARCHITECTURE.md` SHA-256 `c7b959f5e8382f31cc60529c54e9681b8d12c3f1b01435841750d0bc96cedca1`; `DECOMPOSITION.md` SHA-256 `e3af347a18ef90d72f1a960e3a6a37caa9bff27affe728f5206ea99e4dce27e2`; `SPEC.md` SHA-256 `c3ad6a470df4d3a8e2262c8c10dc32f98b1a103d20f053a993e0b64de0ff4a5b`.
+State: Ready for the reviewed spec boundary. Pass 6. `PROJECT.md` SHA-256 `60b3cdb190f97e48451d4d401f4aae170de815f425f06a9aec07c59fa45f6119`; `ARCHITECTURE.md` SHA-256 `9f3719756878e527de4e7cf36b1f5a9bb42a015e2f0830c282a1db80aedd0ec7`; `DECOMPOSITION.md` SHA-256 `dfcd202cfdf7206502dcd9894945042b1e8c158cc9c887d07d3e1fe7c77cfb19`; `SPEC.md` SHA-256 `94ccb2ea93492dd2c584512a715c887d53b2676ae78e6dd3204d57ae841d4524`.
 
-C12 maps value validation to settings, policy transitions to session, command gating to input/session and presentation to controls/ghost/status. Reviewed complete finite domains and defaults, full policy cross-product, no retroactive locking, same-value timing, preview/hold source stability, form focus, restart/reload and no persistence. Located C5 color wording ambiguity (S-COLOR-01): made the ordinary/penetrator exception explicit; rechecked C1/C5/C10 white contracts, resolved. Activation grounding is explicitly recalculated. No remaining blockers; prior PLAN/TASKS ranges are unchanged.
+C13 maps shared token validation/per-key resolution to settings and environmental parsing/writes to the browser adapter; model state remains independent of DOM/storage. Reviewed every key/domain, startup ordering, valid explicit defaults, omitted-cookie retention, mixed sources, duplicate/invalid values, no unrelated cookie/query changes, independent failure paths and reload behavior. C12 now routes reload to C13 and retains live-state semantics; C8 acceptance is explicitly qualified to interval locking. C1–C11 regression responsibilities remain intact. No unresolved findings; this is current SPEC conformance, not whole-package QC.
 
 ## Initial review
 
@@ -43,5 +43,13 @@ Confirmed unresolved findings: none. No runtime checks performed; document readi
 Pass 5 authoring/recheck. `PROJECT.md` SHA-256 `d8e46642abf6a5649038fc64ead12a4a5df19dea1e84eaa484108cfdffac957f`; `ARCHITECTURE.md` SHA-256 `c7b959f5e8382f31cc60529c54e9681b8d12c3f1b01435841750d0bc96cedca1`; `DECOMPOSITION.md` SHA-256 `e3af347a18ef90d72f1a960e3a6a37caa9bff27affe728f5206ea99e4dce27e2`; `SPEC.md` SHA-256 `c3ad6a470df4d3a8e2262c8c10dc32f98b1a103d20f053a993e0b64de0ff4a5b`.
 
 C12 maps value validation to settings, policy transitions to session, command gating to input/session and presentation to controls/ghost/status. Reviewed complete finite domains and defaults, full policy cross-product, no retroactive locking, same-value timing, preview/hold source stability, form focus, restart/reload and no persistence. Located C5 color wording ambiguity (S-COLOR-01): made the ordinary/penetrator exception explicit; rechecked C1/C5/C10 white contracts, resolved. Activation grounding is explicitly recalculated. No remaining blockers; prior PLAN/TASKS ranges are unchanged.
+
+Confirmed unresolved findings: none. No runtime checks performed; document readiness only.
+
+## Revision 5
+
+Pass 6 authoring/recheck. `PROJECT.md` SHA-256 `60b3cdb190f97e48451d4d401f4aae170de815f425f06a9aec07c59fa45f6119`; `ARCHITECTURE.md` SHA-256 `9f3719756878e527de4e7cf36b1f5a9bb42a015e2f0830c282a1db80aedd0ec7`; `DECOMPOSITION.md` SHA-256 `dfcd202cfdf7206502dcd9894945042b1e8c158cc9c887d07d3e1fe7c77cfb19`; `SPEC.md` SHA-256 `94ccb2ea93492dd2c584512a715c887d53b2676ae78e6dd3204d57ae841d4524`.
+
+C13 maps shared token validation/per-key resolution to settings and environmental parsing/writes to the browser adapter; model state remains independent of DOM/storage. Reviewed every key/domain, startup ordering, valid explicit defaults, omitted-cookie retention, mixed sources, duplicate/invalid values, no unrelated cookie/query changes, independent failure paths and reload behavior. C12 now routes reload to C13 and retains live-state semantics; C8 acceptance is explicitly qualified to interval locking. C1–C11 regression responsibilities remain intact. No unresolved findings; this is current SPEC conformance, not whole-package QC.
 
 Confirmed unresolved findings: none. No runtime checks performed; document readiness only.

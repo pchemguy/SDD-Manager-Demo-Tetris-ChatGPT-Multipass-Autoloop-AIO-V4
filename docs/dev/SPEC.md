@@ -55,7 +55,7 @@ An ordinary landing is the maximum downward translation reachable by repeated le
 
 For ordinary pieces grounding begins immediately when a legal active piece cannot move one row down; for penetrators it begins when the active position equals C10’s deepest legal landing, including after spawn, Hold, movement, rotation or hard drop. Capture the gravity interval (1000 ms) and a simulation timestamp on that transition. Under interval locking, settle when grounded elapsed time reaches that interval, independently of when the next gravity step falls. Grounded shifts/rotations, repeated hard drops, failed downward attempts and soft drops do not refresh a running timer. Leaving support cancels it; later grounding starts a new full interval. A new piece starts with fresh timing. Gravity and lock expiry are serialized; at equal time the already grounded piece locks once before any later command is processed. Blur/suspension time is excluded by C3; no pause feature is required.
 
-Acceptance: landings match ghost and hard drop at empty floor, stack and overhang; 999 ms of grounded time does not lock and the next 1 ms does. A move retaining support keeps the original deadline; leaving support cancels it, and re-grounding gets a fresh interval. A zero-distance repeated hard drop cannot extend the deadline. Hold resets timing for its replacement; game-over/restart clear pending timers.
+Acceptance under interval locking: landings match ghost and hard drop at empty floor, stack and overhang; 999 ms of grounded time does not lock and the next 1 ms does. A move retaining support keeps the original deadline; leaving support cancels it, and re-grounding gets a fresh interval. A zero-distance repeated hard drop cannot extend the deadline. Hold resets timing for its replacement; game-over/restart clear pending timers.
 
 ## C9 — Conditional ghost visibility
 
@@ -79,9 +79,9 @@ Clearing exactly four rows in one settlement awards one bonus, for ordinary or p
 
 Acceptance: a penetrator passes through a blocking shelf into a deeper legal cavity without changing shelf cells; hard drop and ghost select the same deepest legal y. No landing, wall/out-of-bounds transforms and repeated P are harmless rejections. Overlapping intermediate frames cannot lock; legal landing and 999/1000 ms timing settle once. Hold is ignored while active without a bag draw. Four-line clears award once at counts 0/2/3 (results 1/3/3); spending reduces once and updates symbols. Restart resets bonuses/mode, white is confined to penetrator-origin cells, and the next ordinary spawn restores normal collision rules.
 
-## C12 — Session-only settings
+## C12 — Settings and live behavior
 
-Show labeled HTML controls in the side panel for these settings. Initialize each to its default on page load. Keep them for the current page session, including restart and game over; reload restores defaults. Do not read/write cookies or query parameters for settings. Do not add local/session storage persistence.
+Show labeled HTML controls in the side panel for these settings. Initialize each independently using C13. Keep selected values through restart and game over; page load resolves the current URL and cookies. Persist only these settings through the specified cookies/URL; board, score, source state and bonuses restart normally. No additional local/session storage is required.
 
 | Setting | Allowed values / visible meaning | Default |
 | --- | --- | --- |
@@ -100,4 +100,27 @@ Hold off ignores C without losing the stored shape, consuming source state or ch
 
 A setting change updates controls and relevant drawing immediately and affects subsequent commands without changing score, board, bonuses or active geometry. Only the specified policy switch changes timing. Settings changed after game over apply to the next restart without resuming play. Keep game key handling away from focused form controls. Invalid programmatic/DOM values are rejected without changing the current valid setting. The configuration panel must fit the supported desktop layout without covering the board.
 
-Acceptance: exercise each value and all combinations of general policy × hard-drop policy × hard-drop enablement on ordinary and penetrator landings. Check 999/1000 ms after a real switch, same-value no-op, a switch while airborne/overlapping/game over, and a future hard drop after policy change. Verify ghost modes at rows 9/10, Hold-off retention, ignored active-penetrator Hold, stable preview at bag boundaries, preserved board/score/bonus state and restart retention. Reload restores all defaults and leaves cookies/query state untouched.
+Acceptance: exercise each value and all combinations of general policy × hard-drop policy × hard-drop enablement on ordinary and penetrator landings. Check 999/1000 ms after a real switch, same-value no-op, a switch while airborne/overlapping/game over, and a future hard drop after policy change. Verify ghost modes at rows 9/10, Hold-off retention, ignored active-penetrator Hold, stable preview at bag boundaries, preserved board/score/bonus state and restart retention. Reload resolves all six values under C13 while starting a fresh game session.
+
+## C13 — Cookie and URL persistence
+
+Use the following exact, case-sensitive query keys and cookie names. C12 defines their allowed tokens and defaults. Do not infer values by truthiness or accept partial/case-folded tokens.
+
+| Setting | URL parameter | Cookie | Tokens / default |
+| --- | --- | --- | --- |
+| Ghost visibility | ghost | tetris_ghost | hide, dynamic, show / dynamic |
+| Hard drop | hardDrop | tetris_hardDrop | on, off / on |
+| Next preview | next | tetris_next | on, off / on |
+| Hard-drop locking | dropLock | tetris_dropLock | follow, immediate / follow |
+| General locking | lock | tetris_lock | failed-down, interval / interval |
+| Hold | hold | tetris_hold | on, off / on |
+
+At page initialization, resolve each key independently: one valid explicit URL value wins; otherwise a valid corresponding cookie wins; otherwise use its default. Empty, unknown, malformed or duplicate URL values are invalid for that key only and fall through to cookies/default. Decode query values with standard URL parsing and compare complete decoded tokens. Parse cookie names exactly; malformed percent encoding or duplicate matching cookie names makes only that cookie invalid. Unrelated query parameters/cookies are ignored. Never execute or render supplied strings as HTML.
+
+For every valid explicit URL value, attempt to save that value in its cookie before play starts, including a value equal to the default or current cookie. A missing or invalid URL value must not overwrite a cookie with a default. Do not write default-only or cookie-derived values during initialization. Do not populate omitted URL keys or otherwise rewrite the URL on startup. Resolve from one startup input snapshot so writes cannot affect the resolution of other keys.
+
+Whenever the player changes a setting to another valid value, apply C12 immediately, write only that setting’s cookie and set its URL key to exactly one canonical selected token. Use History replacement without navigation/reload or a new history entry. Preserve pathname, unrelated query key/value pairs and URL fragment; remove duplicates only for the key being changed. A same-value selection remains a no-op. Invalid UI values cause neither model changes nor persistence writes. Settings are resolved on page initialization; automatic live re-resolution of externally edited address/cookie values is outside scope.
+
+Cookies use the exact table names, percent-encoded values, Path=/, SameSite=Lax and Max-Age=31536000; include Secure on HTTPS. Restrict writes to these six application cookies and never delete unrelated cookies. Cookies may expire, be cleared or be unavailable; that does not change the precedence rule. Cookie read/write or History errors are caught independently. After a cookie write, check readable effective value to identify silent refusal; attempt the URL update even if cookie writing fails and vice versa. Keep the selected setting in memory and allow play; show a concise nonblocking message that settings may not be saved when failure is detected. Do not display raw exception, credential or cookie data. No server or HttpOnly cookie facility is required.
+
+Acceptance: for every setting verify valid URL overrides valid cookie/default; omitted URL preserves valid cookie; invalid URL falls through to valid cookie; missing/invalid both uses the default. Verify explicit default URL tokens overwrite a different saved value, without writing defaults for other omitted keys. Exercise a mixed source example with ghost=hide in URL, hardDrop=off only in cookie, invalid hold URL with hold=on cookie and no next source; results are hide/off/on/on, with only explicit valid ghost synchronized. Duplicate/empty/malformed/case-mismatched values affect only their own key. Verify all six player changes update only their cookie/key, preserve unrelated keys and fragment, and reload restores those selections. Block cookies and separately deny History writes: in-memory behavior, other persistence path and game controls remain operational with nonblocking feedback. Restart never rewrites board or bonus data into storage.

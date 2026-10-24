@@ -4,7 +4,7 @@
 
 - Mode: autodoc/autoloop, explicitly requested on 2026-10-24 for six predefined cumulative scopes.
 - Delivery mode: strict multipass. No permission to change earlier phases/tasks has been supplied. Preserve their identities, scope, milestone membership, order, dependencies and exits; add subsequent ranges for subsequent scope.
-- Current pass: 6; DOCS-004 accepted; next DOCS-005.
+- Current pass: 6; DOCS-005 accepted; next DOCS-006.
 - Approval basis: first PROJECT explicitly approved by the user (“Approve”) on 2026-10-24. Later PROJECT approvals are waived, as announced in chat; subsequent document checkpoints and scope resets are preapproved by the selected mode after first approval. Newly discovered material choices are delegated under autoloop, with visible rationale. Initial cross-scope proposals were accepted in that same approval.
 - Tracking: enabled for preparation and implementation by existing root AGENTS.md. Milestone 1 (`sdd-docs-main`) and issues 1–9 match bundled definitions and associations, verified before repository writes. No implementation objects activated.
 - Publication: every owned commit is pushed and read back before progression. Reporting: Standard after Explicit bootstrap.
@@ -162,6 +162,8 @@ Material unresolved decisions: none; first PROJECT approval accepted the brief a
 
 - Pass 6, DOCS-004: `DECOMPOSITION.md` SHA-256 `dfcd202cfdf7206502dcd9894945042b1e8c158cc9c887d07d3e1fe7c77cfb19`; scoped autodoc/autoloop preapproval following first PROJECT approval. Current architecture/component responsibilities, required interfaces, verification seams and failure ownership reviewed; no duplicated rule owners. Publication and issue #4 closure must be read back before progression.
 
+- Pass 6, DOCS-005: `SPEC.md` SHA-256 `94ccb2ea93492dd2c584512a715c887d53b2676ae78e6dd3204d57ae841d4524`; scoped autodoc/autoloop preapproval following first PROJECT approval. Current SPEC/design QC Ready; adjacent review report retains exact input identities, coverage, earlier observations and recheck. Use exact finite tokens and application-scoped cookies; invalid or duplicate URL values fall through per key. Resolve once before the first frame. Cookie/History failures are independent best-effort effects with nonblocking feedback; only settings persist. Earlier Phase 6 remains the session-only increment, and Phase 7 adds persistence without rewriting its tasks/exits. Publication and issue #5 closure must be read back before progression.
+
 ## Initialization and current reset
 
 - Original root-file presence: all four existed: AI_DISCLOSURE.md, SDD-MANAGER.md, AGENTS.md, SKILL_DISCOVERY_PROTOCOL.md. Copied root files: none.
@@ -172,4 +174,4 @@ Material unresolved decisions: none; first PROJECT approval accepted the brief a
 
 ## Pending transitions
 
-Publish/read back this DOCS-004 checkpoint, then close/read back issue #4. All prior checkpoint effects have been verified. Continue only after the required hosted effect is verified.
+Publish/read back this DOCS-005 checkpoint, then close/read back issue #5. All prior checkpoint effects have been verified. Continue only after the required hosted effect is verified.
