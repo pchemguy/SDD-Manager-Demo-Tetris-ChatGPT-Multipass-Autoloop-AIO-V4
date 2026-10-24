@@ -21,3 +21,7 @@ Board settlement validates all piece cells before any write. Completed rows are 
 ## Design interface shapes
 
 Use simple TypeScript data records for Board, Piece and GameState, and a closed Action union. A pure `step(state, action, random)` boundary or equivalent explicit dependency injection is sufficient; no inheritance hierarchy is required. Expose immutable views to presentation. Keep coordinate conversion in the renderer, board coordinates in geometry, and timing units in the controller/model command contract. SPEC settles exact coordinate, timing and rejection rules before implementation.
+
+## Assisted piece lifecycle
+
+Geometry provides ordered rotation candidates and the ordinary landing projection. Piece source owns a shuffled seven-shape bag and cursor. Session owns held shape, per-piece Hold eligibility, grounded-since timestamp and gravity accumulator; it clears timing at spawn and settles atomically. Renderer reads a derived ghost and optional held-shape snapshot; it has no authority to advance the bag. Hold uses the same spawn validation as normal generation. The input adapter maps Space to hard drop and C to Hold, filtering repeated activation. Test seams cover bag boundaries, blocked swaps, kick selection, landing equality and exact lock expiry.
