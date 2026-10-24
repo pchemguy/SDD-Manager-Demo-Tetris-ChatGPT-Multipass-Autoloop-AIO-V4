@@ -44,3 +44,65 @@ All work is planned and unchecked. [PLAN](PLAN.md) owns phase/milestone boundari
     - [ ] Milestone 1.4 — Phase review
         - [ ] T-013 — Review, test and report phase 1
             Depends on: milestone 1.1 completed/closed, milestone 1.2 completed/closed, milestone 1.3 completed/closed. Review cross-milestone code, run phase exits/regressions, repair blockers, aggregate TODOs and update HANDOFF. Report: docs/dev/reports/phases/1/PHASE-REPORT.md. Publish before review issue/milestone closure; integrate only the complete verified phase. Release/version preparation follows the authorized release gate.
+
+## Phase 2 — Bag, kicks and Hold
+
+- [ ] Phase 2 — Bag, kicks and Hold
+    - [ ] Milestone 2.1 — Reliable piece controls
+        - [ ] T-014 — Implement deterministic seven-piece bags
+            Scope: src/game/source.ts and source fixtures. Depends on: Phase 1 completion, closure and published integration.
+            Contract: SPEC C1–C7; C8 delay is deferred to Phase 3 under this phase’s recorded baseline; PLAN Phase 2 and layout ownership. Evidence: Verify permutation, refill, bag-boundary repetition and seeded shuffle consumption.
+        - [ ] T-015 — Implement ordered rotation kicks
+            Scope: src/game/geometry.ts and geometry fixtures. Depends on: T-014.
+            Contract: SPEC C1–C7; C8 delay is deferred to Phase 3 under this phase’s recorded baseline; PLAN Phase 2 and layout ownership. Evidence: Verify ordered legal candidates for all shapes, wall/floor/stack rejection and O invariance; retain earlier movement behavior.
+        - [ ] T-016 — Integrate source and kicks into play
+            Scope: session/controller and browser regressions. Depends on: T-015.
+            Contract: SPEC C1–C7; C8 delay is deferred to Phase 3 under this phase’s recorded baseline; PLAN Phase 2 and layout ownership. Evidence: Run classic sessions with bag/source changes and visible wall kicks; preserve scoring, restart and the current failed-down phase baseline before Phase 3 timing.
+        - [ ] T-017 — Review, test and report milestone 2.1
+            Depends on: T-014, T-015, T-016. Review code and tests separately, exercise milestone exits/regressions, repair blockers and document TODO disposition. Report: docs/dev/reports/phases/2/2.1.md. Refresh HANDOFF; commit/push/read back before issue then milestone closure.
+    - [ ] Milestone 2.2 — Held-piece control
+        - [ ] T-018 — Implement Hold state and transitions
+            Scope: src/game/session.ts and state tests. Depends on: T-017.
+            Contract: SPEC C1–C7; C8 delay is deferred to Phase 3 under this phase’s recorded baseline; PLAN Phase 2 and layout ownership. Evidence: Cover empty-store draw, no-draw swap, canonical replacement, once-per-lock gate and blocked-spawn game over.
+        - [ ] T-019 — Expose Hold control and display
+            Scope: input adapter, status view and browser checks. Depends on: T-018.
+            Contract: SPEC C1–C7; C8 delay is deferred to Phase 3 under this phase’s recorded baseline; PLAN Phase 2 and layout ownership. Evidence: C activates once per physical press; labeled held shape matches stored state; game-over input remains guarded.
+        - [ ] T-020 — Verify Hold interactions and delivery docs
+            Scope: unit/browser regressions and README. Depends on: T-019.
+            Contract: SPEC C1–C7; C8 delay is deferred to Phase 3 under this phase’s recorded baseline; PLAN Phase 2 and layout ownership. Evidence: Cover restart/source consumption and listener lifecycle while retaining the playable baseline; document actual controls.
+        - [ ] T-021 — Review, test and report milestone 2.2
+            Depends on: T-018, T-019, T-020. Review code and tests separately, exercise milestone exits/regressions, repair blockers and document TODO disposition. Report: docs/dev/reports/phases/2/2.2.md. Refresh HANDOFF; commit/push/read back before issue then milestone closure.
+    - [ ] Milestone 2.3 — Phase review
+        - [ ] T-022 — Review, test and report phase 2
+            Depends on: milestone 2.1 completed/closed, milestone 2.2 completed/closed. Review cross-milestone code, run phase exits/regressions, repair blockers, aggregate TODOs and update HANDOFF. Report: docs/dev/reports/phases/2/PHASE-REPORT.md. Publish before review issue/milestone closure; integrate only the complete verified phase. Release/version preparation follows the authorized release gate.
+
+## Phase 3 — Landing assistance and delayed lock
+
+- [ ] Phase 3 — Landing assistance and delayed lock
+    - [ ] Milestone 3.1 — Consistent landing assistance
+        - [ ] T-023 — Define the ordinary landing query
+            Scope: src/game/geometry.ts and projection fixtures. Depends on: Phase 2 completion, closure and published integration.
+            Contract: SPEC C8 plus regression of C1–C7 under this phase’s recorded baseline; PLAN Phase 3 and layout ownership. Evidence: Verify floor, stacks, overhangs and zero-distance landings; projection leaves state unchanged.
+        - [ ] T-024 — Render ghost and wire hard drop
+            Scope: src/ui/renderer.ts, input/session and browser checks. Depends on: T-023.
+            Contract: SPEC C8 plus regression of C1–C7 under this phase’s recorded baseline; PLAN Phase 3 and layout ownership. Evidence: Ghost outline matches projected cells; Space moves to the same row without adding drop score; repeat is filtered.
+        - [ ] T-025 — Verify assistance against classic controls
+            Scope: unit/browser interaction checks and docs. Depends on: T-024.
+            Contract: SPEC C8 plus regression of C1–C7 under this phase’s recorded baseline; PLAN Phase 3 and layout ownership. Evidence: Cover Hold replacement, blocked spawn, restart, visible ghost and hard-drop landing equality in both targets.
+        - [ ] T-026 — Review, test and report milestone 3.1
+            Depends on: T-023, T-024, T-025. Review code and tests separately, exercise milestone exits/regressions, repair blockers and document TODO disposition. Report: docs/dev/reports/phases/3/3.1.md. Refresh HANDOFF; commit/push/read back before issue then milestone closure.
+    - [ ] Milestone 3.2 — Grounded interval locking
+        - [ ] T-027 — Implement grounded timer transitions
+            Scope: src/game/session.ts and fake-time tests. Depends on: T-026.
+            Contract: SPEC C8 plus regression of C1–C7 under this phase’s recorded baseline; PLAN Phase 3 and layout ownership. Evidence: Capture grounding, preserve supported-move deadline, cancel on ungrounding and settle exactly once at expiry.
+        - [ ] T-028 — Integrate delayed locking into controller actions
+            Scope: controller/session and interaction fixtures. Depends on: T-027.
+            Contract: SPEC C8 plus regression of C1–C7 under this phase’s recorded baseline; PLAN Phase 3 and layout ownership. Evidence: Failed down and hard drop retain active state; restart/Hold/blur handle timing and equal-time ordering correctly.
+        - [ ] T-029 — Validate delay boundaries and playable delivery
+            Scope: unit/browser suites and README. Depends on: T-028.
+            Contract: SPEC C8 plus regression of C1–C7 under this phase’s recorded baseline; PLAN Phase 3 and layout ownership. Evidence: Exercise 999/1000 ms, repeated drop, shift/rotation, leave/re-ground and full sessions on both browsers; document timing.
+        - [ ] T-030 — Review, test and report milestone 3.2
+            Depends on: T-027, T-028, T-029. Review code and tests separately, exercise milestone exits/regressions, repair blockers and document TODO disposition. Report: docs/dev/reports/phases/3/3.2.md. Refresh HANDOFF; commit/push/read back before issue then milestone closure.
+    - [ ] Milestone 3.3 — Phase review
+        - [ ] T-031 — Review, test and report phase 3
+            Depends on: milestone 3.1 completed/closed, milestone 3.2 completed/closed. Review cross-milestone code, run phase exits/regressions, repair blockers, aggregate TODOs and update HANDOFF. Report: docs/dev/reports/phases/3/PHASE-REPORT.md. Publish before review issue/milestone closure; integrate only the complete verified phase. Release/version preparation follows the authorized release gate.
