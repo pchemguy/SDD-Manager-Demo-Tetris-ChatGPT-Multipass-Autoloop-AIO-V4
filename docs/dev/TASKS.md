@@ -106,3 +106,19 @@ All work is planned and unchecked. [PLAN](PLAN.md) owns phase/milestone boundari
     - [ ] Milestone 3.3 — Phase review
         - [ ] T-031 — Review, test and report phase 3
             Depends on: milestone 3.1 completed/closed, milestone 3.2 completed/closed. Review cross-milestone code, run phase exits/regressions, repair blockers, aggregate TODOs and update HANDOFF. Report: docs/dev/reports/phases/3/PHASE-REPORT.md. Publish before review issue/milestone closure; integrate only the complete verified phase. Release/version preparation follows the authorized release gate.
+
+## Phase 4 — Conditional ghost display
+
+- [ ] Phase 4 — Conditional ghost display
+    - [ ] Milestone 4.1 — Midline visibility
+        - [ ] T-032 — Implement occupied-cell midline visibility
+            Scope: src/ui/ghost.ts, renderer and unit fixtures. Depends on: Phase 3 completion, closure and published integration.
+            Contract: SPEC C9 and C8 projection regression under this phase’s recorded baseline; PLAN Phase 4 and layout ownership. Evidence: Verify row-9/10 boundary and all shape orientations using occupied cells; no pixel-coordinate dependence.
+        - [ ] T-033 — Verify visibility across gameplay transitions
+            Scope: browser/unit fixtures, renderer and README. Depends on: T-032.
+            Contract: SPEC C9 and C8 projection regression under this phase’s recorded baseline; PLAN Phase 4 and layout ownership. Evidence: Cover move/rotation/Hold/spawn/restart, hidden hard drop, resize and game over in both browsers; inspect actual ghost raster output.
+        - [ ] T-034 — Review, test and report milestone 4.1
+            Depends on: T-032, T-033. Review code and tests separately, exercise milestone exits/regressions, repair blockers and document TODO disposition. Report: docs/dev/reports/phases/4/4.1.md. Refresh HANDOFF; commit/push/read back before issue then milestone closure.
+    - [ ] Milestone 4.2 — Phase review
+        - [ ] T-035 — Review, test and report phase 4
+            Depends on: milestone 4.1 completed/closed. Review cross-milestone code, run phase exits/regressions, repair blockers, aggregate TODOs and update HANDOFF. Report: docs/dev/reports/phases/4/PHASE-REPORT.md. Publish before review issue/milestone closure; integrate only the complete verified phase. Release/version preparation follows the authorized release gate.
