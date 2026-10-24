@@ -16,7 +16,7 @@
 
 The input adapter delivers one semantic action at a time. The frame controller supplies simulation deltas, applies the reducer, and passes its resulting snapshot to the view. A rejected transform returns the unchanged state; it is not an exception. Programmer-invalid state is detected at the model boundary in tests rather than silently corrupting the board. Browser teardown releases listeners and animation subscriptions owned by the controller.
 
-Board settlement validates all piece cells before any write. Completed rows are identified together and compacted once; score and the next spawn are computed from that result. Source state is advanced only when a piece is actually needed. Model test fixtures may construct a state directly, but production UI cannot mutate it.
+Board settlement validates all piece cells before any write. Completed rows are identified together and compacted once; score and the next spawn are computed from that result. The source draw cursor advances only when a piece is actually spawned; cached next-bag preparation may provide a stable preview without consuming a shape. Model test fixtures may construct a state directly, but production UI cannot mutate it.
 
 ## Design interface shapes
 
@@ -33,3 +33,7 @@ A pure presentation predicate consumes landing cell rows and returns show/hide. 
 ## Penetrator responsibilities
 
 Geometry provides the deepest legal landing for a shape/column/orientation and validates mode-aware transforms. Board merge retains unconditional in-bounds/non-overlap validation; occupied cells are never destroyed by falling. Session owns activation eligibility, bonus spending/earning/cap, active mode reset, Hold suppression and grounding at the penetrator landing. A locked cell carries its display color, including white from a penetrator, without retaining traversal ability. Status presents one symbol per available bonus. Ghost and hard drop consume the same mode-aware projection. Test seams include separated cavities, overlapping intermediate frames, rejected transforms, exhausted bonuses, four-line awards and exact lock timing.
+
+## Configuration and next preview
+
+Settings validation owns the six finite value domains and defaults; the session owns selected values and their effect on active timing. The UI settings view owns labeled controls and semantic change events, including correct focus isolation. Input checks hard-drop/Hold enablement at command handling; active penetrator Hold suppression remains a stronger lifecycle rule. Source owns the cached next-shape peek, and status renders it without a draw. Unit checks isolate validation and timing transitions; browser checks exercise real control changes without resetting the board or stealing control focus.
