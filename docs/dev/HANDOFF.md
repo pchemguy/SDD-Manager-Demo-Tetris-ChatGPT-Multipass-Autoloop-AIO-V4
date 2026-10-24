@@ -1,6 +1,6 @@
 # Project handoff
 
-Checkpoint: authorized reset to Pass 6 — Configuration persistence.
+Checkpoint: Pass 6 DOCS-008, accepted document set through TASKS.
 
 ## Workflow and sources
 
@@ -16,4 +16,4 @@ Working branch design-docs/main; creation parent and eventual integration target
 
 ## Pending work and next action
 
-Publish/read back this reset, then reopen/read back the same issues #2–9. Retain issue #1 closed and milestone 1 open. Resume PROJECT only after all effects are verified. Prior accepted range checkpoint: `3861efcf94bfe1e393a984fba17220eeb7b66a71`. Strict preservation and original final stop remain controlling.
+Publish/read back this TASKS completion and close/read back issue #8. Then stop. DOCS-009 and issue #9 and milestone 1 remain open; no whole-package QC, preparation merge, implementation projection or product release. Reconstruct later effects from DOCS_PREPARATION, Git and provider state; this snapshot cannot establish its own later publication.

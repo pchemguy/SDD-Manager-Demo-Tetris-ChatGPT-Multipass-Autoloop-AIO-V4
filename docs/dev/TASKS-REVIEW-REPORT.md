@@ -2,9 +2,9 @@
 
 ## Current gate
 
-State: Ready for the reviewed tasks boundary. Pass 5. `SPEC.md` SHA-256 `c3ad6a470df4d3a8e2262c8c10dc32f98b1a103d20f053a993e0b64de0ff4a5b`; `PLAN.md` SHA-256 `243f6884252ac90859ca39f550c8780f6a653aff60d6ad211b5758173bf34f92`; `layout.md` SHA-256 `90b29e1dc9df022a0f98aaf404a9d40d9069a0e46e7b60acbc509fe8c03f5af2`; `TASKS.md` SHA-256 `6da4488a494680e4c1932a24f306115b66450d23783074d038f9103074a304c1`.
+State: Ready for the reviewed tasks boundary. Pass 6. `SPEC.md` SHA-256 `94ccb2ea93492dd2c584512a715c887d53b2676ae78e6dd3204d57ae841d4524`; `PLAN.md` SHA-256 `58ddb0d62c7d64ebdf1e6c506cb49b6fbf8b98e60e32191b858dbc07928bf221`; `layout.md` SHA-256 `f9a5fca5bc7dce0be5d310c8d5c87af798b76c2b33aede5371936b3f89bebf96`; `TASKS.md` SHA-256 `ed5479b580dceb607f48121e37ba909275427df2372b7f52a92cbc874f0fa917`.
 
-TASKS/PLAN conformance Ready. 6.1: 3 delivery tasks + one excluded milestone review; 6.2: 3 delivery tasks + one excluded milestone review. All groups contain bounded behavior/consumer/integration work; 1–2 task groups are retained for a narrow cohesive outcome rather than padding. Each phase has exactly one separate final phase-review task dependent on all delivery milestone closures. Checked unique monotonic IDs, four-space hierarchy, ordered prerequisites, report paths, contract/physical ownership, tests/docs/failures and integration coverage. Earlier complete TASKS byte prefix is identical; no earlier scope, parent, order, dependency or exit changed. No implementation boxes checked.
+TASKS/PLAN conformance Ready. 7.1: 3 delivery tasks + one excluded milestone review; 7.2: 3 delivery tasks + one excluded milestone review. All groups contain bounded behavior/consumer/integration work; 1–2 task groups are retained for a narrow cohesive outcome rather than padding. Each phase has exactly one separate final phase-review task dependent on all delivery milestone closures. Checked unique monotonic IDs, four-space hierarchy, ordered prerequisites, report paths, contract/physical ownership, tests/docs/failures and integration coverage. Earlier complete TASKS byte prefix is identical; no earlier scope, parent, order, dependency or exit changed. No implementation boxes checked.
 
 ## Initial review
 
@@ -43,5 +43,13 @@ Confirmed unresolved findings: none. No runtime checks performed; document readi
 Pass 5 authoring/recheck. `SPEC.md` SHA-256 `c3ad6a470df4d3a8e2262c8c10dc32f98b1a103d20f053a993e0b64de0ff4a5b`; `PLAN.md` SHA-256 `243f6884252ac90859ca39f550c8780f6a653aff60d6ad211b5758173bf34f92`; `layout.md` SHA-256 `90b29e1dc9df022a0f98aaf404a9d40d9069a0e46e7b60acbc509fe8c03f5af2`; `TASKS.md` SHA-256 `6da4488a494680e4c1932a24f306115b66450d23783074d038f9103074a304c1`.
 
 TASKS/PLAN conformance Ready. 6.1: 3 delivery tasks + one excluded milestone review; 6.2: 3 delivery tasks + one excluded milestone review. All groups contain bounded behavior/consumer/integration work; 1–2 task groups are retained for a narrow cohesive outcome rather than padding. Each phase has exactly one separate final phase-review task dependent on all delivery milestone closures. Checked unique monotonic IDs, four-space hierarchy, ordered prerequisites, report paths, contract/physical ownership, tests/docs/failures and integration coverage. Earlier complete TASKS byte prefix is identical; no earlier scope, parent, order, dependency or exit changed. No implementation boxes checked.
+
+Confirmed unresolved findings: none. No runtime checks performed; document readiness only.
+
+## Revision 5
+
+Pass 6 authoring/recheck. `SPEC.md` SHA-256 `94ccb2ea93492dd2c584512a715c887d53b2676ae78e6dd3204d57ae841d4524`; `PLAN.md` SHA-256 `58ddb0d62c7d64ebdf1e6c506cb49b6fbf8b98e60e32191b858dbc07928bf221`; `layout.md` SHA-256 `f9a5fca5bc7dce0be5d310c8d5c87af798b76c2b33aede5371936b3f89bebf96`; `TASKS.md` SHA-256 `ed5479b580dceb607f48121e37ba909275427df2372b7f52a92cbc874f0fa917`.
+
+TASKS/PLAN conformance Ready. 7.1: 3 delivery tasks + one excluded milestone review; 7.2: 3 delivery tasks + one excluded milestone review. All groups contain bounded behavior/consumer/integration work; 1–2 task groups are retained for a narrow cohesive outcome rather than padding. Each phase has exactly one separate final phase-review task dependent on all delivery milestone closures. Checked unique monotonic IDs, four-space hierarchy, ordered prerequisites, report paths, contract/physical ownership, tests/docs/failures and integration coverage. Earlier complete TASKS byte prefix is identical; no earlier scope, parent, order, dependency or exit changed. No implementation boxes checked.
 
 Confirmed unresolved findings: none. No runtime checks performed; document readiness only.

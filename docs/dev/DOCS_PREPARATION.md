@@ -4,7 +4,7 @@
 
 - Mode: autodoc/autoloop, explicitly requested on 2026-10-24 for six predefined cumulative scopes.
 - Delivery mode: strict multipass. No permission to change earlier phases/tasks has been supplied. Preserve their identities, scope, milestone membership, order, dependencies and exits; add subsequent ranges for subsequent scope.
-- Current pass: 6; DOCS-007 accepted; next DOCS-008.
+- Current pass: 6; DOCS-008 accepted; next final autodoc stop before DOCS-009.
 - Approval basis: first PROJECT explicitly approved by the user (“Approve”) on 2026-10-24. Later PROJECT approvals are waived, as announced in chat; subsequent document checkpoints and scope resets are preapproved by the selected mode after first approval. Newly discovered material choices are delegated under autoloop, with visible rationale. Initial cross-scope proposals were accepted in that same approval.
 - Tracking: enabled for preparation and implementation by existing root AGENTS.md. Milestone 1 (`sdd-docs-main`) and issues 1–9 match bundled definitions and associations, verified before repository writes. No implementation objects activated.
 - Publication: every owned commit is pushed and read back before progression. Reporting: Standard after Explicit bootstrap.
@@ -168,6 +168,8 @@ Material unresolved decisions: none; first PROJECT approval accepted the brief a
 
 - Pass 6, DOCS-007: `layout.md` SHA-256 `f9a5fca5bc7dce0be5d310c8d5c87af798b76c2b33aede5371936b3f89bebf96`; scoped autodoc/autoloop preapproval following first PROJECT approval. Combined PLAN/layout QC Ready; exact source identities and preserved earlier delivery ranges in PLAN-REVIEW-REPORT.md. Unchanged valid placement reused where appropriate. Publication and issue #7 closure must be read back before progression.
 
+- Pass 6, DOCS-008: `TASKS.md` SHA-256 `ed5479b580dceb607f48121e37ba909275427df2372b7f52a92cbc874f0fa917`; scoped autodoc/autoloop preapproval following first PROJECT approval. Current TASKS/PLAN QC Ready; new ranges appended with strict earlier byte-prefix preservation. See TASKS-REVIEW-REPORT.md for counts, scope review and exact input identities. Publication and issue #8 closure must be read back before progression.
+
 ## Initialization and current reset
 
 - Original root-file presence: all four existed: AI_DISCLOSURE.md, SDD-MANAGER.md, AGENTS.md, SKILL_DISCOVERY_PROTOCOL.md. Copied root files: none.
@@ -178,4 +180,4 @@ Material unresolved decisions: none; first PROJECT approval accepted the brief a
 
 ## Pending transitions
 
-Publish/read back this DOCS-007 checkpoint, then close/read back issue #7. All prior checkpoint effects have been verified. Continue only after the required hosted effect is verified.
+Publish/read back this DOCS-008 checkpoint, then close/read back issue #8. All prior checkpoint effects have been verified. After closure, stop before DOCS-009/package QC, documentation integration and implementation.

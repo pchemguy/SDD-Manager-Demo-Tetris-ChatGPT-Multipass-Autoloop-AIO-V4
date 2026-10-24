@@ -196,3 +196,34 @@ All work is planned and unchecked. [PLAN](PLAN.md) owns phase/milestone boundari
     - [ ] Milestone 6.3 — Phase review
         - [ ] T-057 — Review, test and report phase 6
             Depends on: milestone 6.1 completed/closed, milestone 6.2 completed/closed. Review cross-milestone code, run phase exits/regressions, repair blockers, aggregate TODOs and update HANDOFF. Report: docs/dev/reports/phases/6/PHASE-REPORT.md. Publish before review issue/milestone closure; integrate only the complete verified phase. Release/version preparation follows the authorized release gate.
+
+## Phase 7 — Persistent configuration
+
+- [ ] Phase 7 — Persistent configuration
+    - [ ] Milestone 7.1 — Independent settings restoration
+        - [ ] T-058 — Define persistence tokens and pure source resolution
+            Scope: src/game/settings.ts and per-setting fixtures. Depends on: Phase 6 completion, closure and published integration.
+            Contract: SPEC C13 plus C12 behavior and C1–C11 regression under this phase’s recorded baseline; PLAN Phase 7 and layout ownership. Evidence: Cover exact keys/tokens, all six independent precedence paths, invalid/duplicate/empty inputs, cookie decode errors and mixed sources.
+        - [ ] T-059 — Implement scoped cookie and startup adapters
+            Scope: src/browser/persistence.ts, controller initialization and adapter checks. Depends on: T-058.
+            Contract: SPEC C13 plus C12 behavior and C1–C11 regression under this phase’s recorded baseline; PLAN Phase 7 and layout ownership. Evidence: Read one input snapshot; save every valid explicit URL value including defaults; leave cookies for omitted/invalid parameters untouched; resolve before rendering.
+        - [ ] T-060 — Verify actual restored startup state
+            Scope: tests/browser/ and isolated cookie/URL fixtures. Depends on: T-059.
+            Contract: SPEC C13 plus C12 behavior and C1–C11 regression under this phase’s recorded baseline; PLAN Phase 7 and layout ownership. Evidence: Reload with URL, cookie and default mixtures on both targets; selected controls and gameplay match resolved values while board/score/bonuses start fresh.
+        - [ ] T-061 — Review, test and report milestone 7.1
+            Depends on: T-058, T-059, T-060. Review code and tests separately, exercise milestone exits/regressions, repair blockers and document TODO disposition. Report: docs/dev/reports/phases/7/7.1.md. Refresh HANDOFF; commit/push/read back before issue then milestone closure.
+    - [ ] Milestone 7.2 — Durable player changes and failure tolerance
+        - [ ] T-062 — Integrate canonical URL and cookie updates
+            Scope: persistence/controller/settings UI and focused checks. Depends on: T-061.
+            Contract: SPEC C13 plus C12 behavior and C1–C11 regression under this phase’s recorded baseline; PLAN Phase 7 and layout ownership. Evidence: Use History replacement without reload, preserve unrelated query pairs/fragment and collapse only the changed key; apply model update before side effects.
+        - [ ] T-063 — Handle independent persistence failures
+            Scope: browser adapter, settings status view and failure fixtures. Depends on: T-062.
+            Contract: SPEC C13 plus C12 behavior and C1–C11 regression under this phase’s recorded baseline; PLAN Phase 7 and layout ownership. Evidence: Catch cookie/History read/write errors and silent cookie refusal; attempt paths independently, retain in-memory settings and expose concise nonblocking feedback.
+        - [ ] T-064 — Validate persistence and complete static delivery
+            Scope: unit/browser suites, README, module docs and build checks. Depends on: T-063.
+            Contract: SPEC C13 plus C12 behavior and C1–C11 regression under this phase’s recorded baseline; PLAN Phase 7 and layout ownership. Evidence: Exercise all six changes, explicit-default synchronization, omitted-cookie retention, invalid inputs, reload/restart and both failure paths with gameplay regressions on both browsers; document the final settings interface.
+        - [ ] T-065 — Review, test and report milestone 7.2
+            Depends on: T-062, T-063, T-064. Review code and tests separately, exercise milestone exits/regressions, repair blockers and document TODO disposition. Report: docs/dev/reports/phases/7/7.2.md. Refresh HANDOFF; commit/push/read back before issue then milestone closure.
+    - [ ] Milestone 7.3 — Phase review
+        - [ ] T-066 — Review, test and report phase 7
+            Depends on: milestone 7.1 completed/closed, milestone 7.2 completed/closed. Review cross-milestone code, run phase exits/regressions, repair blockers, aggregate TODOs and update HANDOFF. Report: docs/dev/reports/phases/7/PHASE-REPORT.md. Include final docs/dev/reports/IMPLEMENTATION-REPORT.md with all remaining/deferred TODOs and provenance. Publish before review issue/milestone closure; integrate only the complete verified phase. Release/version preparation follows the authorized release gate.
