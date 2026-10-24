@@ -18,6 +18,6 @@ Prioritize Chromium and include Playwright-managed Firefox for browser verificat
 
 ## Scope limits
 
-The intended game contains classic movement, rotation, descent, settling, line clearing, score, game over and restart. Hold, ghost projection, 7-bag generation, wall kicks, hard drop and delayed locking are included. Conditional ghost visibility is included. Penetrator abilities and a side-panel bonus indicator are included. Next-piece preview and player settings are outside this scope.
+The intended game contains classic movement, rotation, descent, settling, line clearing, score, game over and restart. Hold, ghost projection, 7-bag generation, wall kicks, hard drop and delayed locking are included. Conditional ghost visibility is included. Penetrator abilities and a side-panel bonus indicator are included. Next-piece preview and a side panel with six session-only settings are included: ghost visibility, hard-drop enablement, preview visibility, hard-drop locking policy, general locking policy and Hold enablement. Changes apply during play without replacing the board; restart retains settings, while reload restores defaults. Cookies and URL persistence are outside scope.
 
 Multiplayer, accounts, online leaderboards, mobile touch controls and audio are excluded. A keyboard-focused desktop experience is the supported starting point. Exact controls, timing, score values and detailed acceptance cases belong in the specification; they remain agent-selected details within this direction.

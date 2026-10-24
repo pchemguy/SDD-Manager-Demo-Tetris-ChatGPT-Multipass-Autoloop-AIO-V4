@@ -4,7 +4,7 @@
 
 - Mode: autodoc/autoloop, explicitly requested on 2026-10-24 for six predefined cumulative scopes.
 - Delivery mode: strict multipass. No permission to change earlier phases/tasks has been supplied. Preserve their identities, scope, milestone membership, order, dependencies and exits; add subsequent ranges for subsequent scope.
-- Current pass: 5, Session-only configuration; cursor reset to DOCS-002. Retained documents are prior-scope inputs, not current acceptance.
+- Current pass: 5; DOCS-002 accepted; next DOCS-003.
 - Approval basis: first PROJECT explicitly approved by the user (“Approve”) on 2026-10-24. Later PROJECT approvals are waived, as announced in chat; subsequent document checkpoints and scope resets are preapproved by the selected mode after first approval. Newly discovered material choices are delegated under autoloop, with visible rationale. Initial cross-scope proposals were accepted in that same approval.
 - Tracking: enabled for preparation and implementation by existing root AGENTS.md. Milestone 1 (`sdd-docs-main`) and issues 1–9 match bundled definitions and associations, verified before repository writes. No implementation objects activated.
 - Publication: every owned commit is pushed and read back before progression. Reporting: Standard after Explicit bootstrap.
@@ -56,6 +56,8 @@ Pass 4 delegated detail: P is one-way activation until lock; reject activation/t
 ### Pass 5 decision summary
 
 Carry forward the human-approved initial cross-scope decisions; adopt only Session-only configuration at this scope. The prior pass completed at `d67ba4d2d75f803c40af89ca9455543a9fa4215c`. Preserve its PLAN and TASKS byte prefixes (SHA-256 `2bd3073e085215628a341fdce72d036ee805b84a9211e0d4c5cb0ed4c559e7c3` / `3d0eadfb8b4651eb42ac490284bd97c3a69f959a83cb1a3f7a96d9a88e17fe70`); append only new delivery ranges. No prior range may change. Agent-owned detailed decisions are recorded with their owning artifacts below.
+
+Pass 5 delegated detail: A hard drop under follow + failed-down performs the failed continuation at its landing and locks there; immediate always locks on an enabled drop. Same-value changes never restart timing. Stable preview does not consume a shape. Clarify C5’s ordinary-color rule and activation grounding under C10 without changing the accepted penetrator behavior.
 
 ## Cross-scope decisions
 
@@ -134,6 +136,8 @@ Material unresolved decisions: none; first PROJECT approval accepted the brief a
 
 - Pass 4, DOCS-008: `TASKS.md` SHA-256 `3d0eadfb8b4651eb42ac490284bd97c3a69f959a83cb1a3f7a96d9a88e17fe70`; scoped autodoc/autoloop preapproval following first PROJECT approval. Current TASKS/PLAN QC Ready; new ranges appended with strict earlier byte-prefix preservation. See TASKS-REVIEW-REPORT.md for counts, scope review and exact input identities. Publication and issue #8 closure must be read back before progression.
 
+- Pass 5, DOCS-002: `PROJECT.md` SHA-256 `d8e46642abf6a5649038fc64ead12a4a5df19dea1e84eaa484108cfdffac957f`; scoped autodoc/autoloop preapproval following first PROJECT approval. Current cumulative brief reviewed; inherited human-approved decisions retained. A hard drop under follow + failed-down performs the failed continuation at its landing and locks there; immediate always locks on an enabled drop. Same-value changes never restart timing. Stable preview does not consume a shape. Clarify C5’s ordinary-color rule and activation grounding under C10 without changing the accepted penetrator behavior. Publication and issue #2 closure must be read back before progression.
+
 ## Initialization and current reset
 
 - Original root-file presence: all four existed: AI_DISCLOSURE.md, SDD-MANAGER.md, AGENTS.md, SKILL_DISCOVERY_PROTOCOL.md. Copied root files: none.
@@ -144,4 +148,4 @@ Material unresolved decisions: none; first PROJECT approval accepted the brief a
 
 ## Pending transitions
 
-Publish/read back reset to Pass 5, then verify reopening and association of existing issues #2–9; milestone 1 remains open. Do not author until all required effects are verified.
+Publish/read back this DOCS-002 checkpoint, then close/read back issue #2. All prior checkpoint effects have been verified. Continue only after the required hosted effect is verified.
